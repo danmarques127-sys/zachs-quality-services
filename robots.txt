@@ -1,0 +1,35 @@
+# =========================================
+# Zach's Quality Services - robots.txt
+# Ambiente: produção
+# =========================================
+
+# -----------------------------------------
+# Regra padrão para todos os bots
+# -----------------------------------------
+User-agent: *
+Disallow: /admin-login.php
+Disallow: /admin-logout.php
+Disallow: /admin-dashboard.php
+Disallow: /post-edit.php
+Disallow: /tip-admin.php
+Disallow: /config.php
+
+Allow: /
+
+# -----------------------------------------
+# Googlebot específico (mesmas regras)
+# -----------------------------------------
+User-agent: Googlebot
+Disallow: /admin-login.php
+Disallow: /admin-logout.php
+Disallow: /admin-dashboard.php
+Disallow: /post-edit.php
+Disallow: /tip-admin.php
+Disallow: /config.php
+
+Allow: /
+
+# -----------------------------------------
+# Sitemaps
+# -----------------------------------------
+Sitemap: https://www.zachsqualityservices.com/sitemap.xml

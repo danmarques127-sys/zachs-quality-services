@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+  <!-- ========== BASIC HTML META ========== -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+
+  <!-- ========== TITLE ========== -->
+  <title>Zach's Quality Services® | Commercial &amp; Janitorial Cleaning Across Massachusetts</title>
+
+  <!-- ========== META DESCRIPTION ========== -->
+  <meta
+    name="description"
+    content="Professional commercial cleaning and janitorial services for offices, clinics, retail, and facilities. Based near Framingham, MA and serving businesses statewide across Massachusetts."
+  />
+
+  <!-- ========== KEYWORDS ========== -->
+  <meta
+    name="keywords"
+    content="commercial cleaning Massachusetts, janitorial services MA, office cleaning Framingham MA, facility cleaning, medical office cleaning, retail cleaning services"
+  />
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link
+    rel="canonical"
+    href="https://www.zachsqualityservices.com/"
+  />
+
+ <!-- FAVICONS CLÁSSICOS -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+
+<!-- APPLE TOUCH ICON (iOS – atalho na tela inicial) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+
+<!-- SAFARI / NAVEGADORES MODERNOS (icone recortável) -->
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0B163F">
+
+<!-- MANIFEST (Android / PWA) -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- CORES DO NAVEGADOR / SISTEMA -->
+<meta name="theme-color" content="#0B163F">
+<meta name="msapplication-TileColor" content="#0B163F">
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+
+  <!-- ========== OPEN GRAPH / SOCIAL SHARING ========== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zach's Quality Services" />
+  <meta
+    property="og:title"
+    content="Zach's Quality Services® | Commercial Cleaning &amp; Janitorial in Massachusetts"
+  />
+  <meta
+    property="og:description"
+    content="Reliable, professional commercial cleaning for offices, clinics, warehouses and retail locations. Serving all of Massachusetts."
+  />
+  <meta
+    property="og:url"
+    content="https://www.zachsqualityservices.com/"
+  />
+  <meta
+    property="og:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+  <meta
+    property="og:image:alt"
+    content="Commercial janitorial crew from Zach's Quality Services® on-site in Massachusetts."
+  />
+
+  <!-- ========== TWITTER CARD (X) ========== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Zach's Quality Services® | Statewide Commercial Cleaning (MA)"
+  />
+  <meta
+    name="twitter:description"
+    content="Janitorial, office cleaning, post-construction cleanup, floor care, day porter service. Massachusetts-wide coverage."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+
+  <!-- ========== LOCAL / SERVICE AREA SIGNALS ========== -->
+  <meta name="geo.region" content="US-MA" />
+  <meta name="geo.placename" content="Framingham" />
+  <meta name="geo.position" content="42.2793;-71.4162" />
+  <meta name="ICBM" content="42.2793, -71.4162" />
+
+  <!-- ========== INDEXING / CRAWLING POLICY ========== -->
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+  <meta
+    name="googlebot"
+    content="index, follow"
+  />
+
+  <!-- ========== BRAND / OWNERSHIP INFO ========== -->
+  <meta
+    name="author"
+    content="Zach's Quality Services®"
+  />
+  <meta
+    name="publisher"
+    content="Zach's Quality Services®"
+  />
+
+  <!-- ========== STRUCTURED DATA: CleaningService ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Zach's Quality Services®",
+    "url": "https://www.zachsqualityservices.com/",
+    "image": "https://www.zachsqualityservices.com/assets/logo.png",
+    "logo": "https://www.zachsqualityservices.com/assets/logo.png",
+    "description": "Commercial cleaning and janitorial services for offices, medical facilities, retail, industrial and post-construction sites. Serving all of Massachusetts.",
+    "slogan": "We don't cut corners — we clean them.",
+    "telephone": "(000) 000-0000",
+    "priceRange": "$$",
+    "areaServed": [
+      "Framingham MA",
+      "Greater Boston MA",
+      "Worcester County MA",
+      "All Massachusetts"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Framingham",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      }
+    ],
+    "serviceType": [
+      "Commercial Cleaning",
+      "Janitorial Services",
+      "Office Cleaning",
+      "Medical / Clinical Cleaning",
+      "Retail / Storefront Cleaning",
+      "Post-Construction Cleanup",
+      "Floor Care / Buffing / Waxing",
+      "Day Porter Service"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/zachsqualityservices",
+      "https://www.facebook.com/zachsqualityservices"
+    ]
+  }
+  </script>
+
+  <!-- ========== PERFORMANCE HINTS / FONT PRELOAD ========== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ========== BASELINE THEME / RESET ========== -->
+  <style>
+    :root {
+      --page-bg: #ffffff;
+      --text-main: #0a1a2f;
+      --accent: #1a4fa3;
+      --border-soft: #dbe2ef;
+      --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--page-bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+
+  <!-- ========== SITE STYLES & SCRIPTS ========== -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header-inner">
+      <div class="brand-block">
+        <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+          <img 
+            src="images/logoz.png" 
+            alt="Zach’s Quality Services logo"
+            class="brand-logo"
+            width="220"
+            height="70"
+          />
+        </a>
+      </div>
+
+      <!-- NAVIGATION (desktop) -->
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a class="main-nav-link" href="about.html">About Us</a></li>
+
+          <li class="main-nav-item main-nav-has-sub">
+            <button
+              class="main-nav-link main-nav-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="services-subnav"
+            >
+              Services
+              <span class="nav-caret" aria-hidden="true">▼</span>
+            </button>
+            <ul class="subnav-list" id="services-subnav" role="menu">
+              <li role="none"><a role="menuitem" class="subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="day.html">Day Porter Services</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav-item"><a class="main-nav-link" href="industries.html">Industries</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="reviews.html">Reviews</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA DESKTOP -->
+      <div class="header-cta-wrapper">
+        <a href="quote.html" class="header-cta-btn" data-cta="free-estimate">
+          Free Estimate
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <button class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE DRAWER -->
+    <aside class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <button class="mobile-close" aria-label="Close menu">&times;</button>
+
+        <div class="mobile-brand-block">
+          <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+            <img
+              src="images/logoa.png"
+              alt="Zach’s Quality Services logo"
+              class="mobile-brand-logo"
+              width="200"
+              height="60"
+            />
+          </a>
+        </div>
+
+        <nav class="mobile-nav-menu" role="navigation" aria-label="Mobile Primary">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="about.html">About Us</a></li>
+
+            <li class="mobile-nav-item mobile-nav-has-sub">
+              <button
+                class="mobile-nav-link mobile-nav-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-services-subnav"
+                type="button"
+              >
+                Services
+                <span class="nav-caret" aria-hidden="true">▼</span>
+              </button>
+
+              <ul class="mobile-subnav-list" id="mobile-services-subnav">
+                <li><a class="mobile-subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+                <li><a class="mobile-subnav-link" href="day.html">Day Porter Services</a></li>
+                <li><a class="mobile-subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+                <li><a class="mobile-subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+                <li><a class="mobile-subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+                <li><a class="mobile-subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+                <li><a class="mobile-subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+                <li><a class="mobile-subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="industries.html">Industries</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="reviews.html">Reviews</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <a class="mobile-cta-btn" href="quote.html" data-cta="free-estimate-mobile">
+          Free Estimate
+        </a>
+
+        <div class="mobile-contact-block">
+          <div class="contact-line">
+            <span class="contact-label">Call:</span>
+            <a class="contact-value" href="tel:+15087268558">(508) 726-8558</a>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Headquarters:</span>
+            <span class="contact-value">
+              123 Main St<br>
+              Framingham, MA 01701
+            </span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Coverage:</span>
+            <span class="contact-value">Massachusetts (statewide)</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Availability:</span>
+            <span class="contact-value">24/7 Emergency Response</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- dark overlay behind drawer -->
+    <div class="mobile-overlay" aria-hidden="true"></div>
+  </header>
+<main class="about-page-main">
+<section class="about-page-section about-intro-section">
+  <div class="container about-page-grid">
+    
+    <!-- COLUNA ESQUERDA: TEXTO -->
+    <div class="about-page-content">
+      <span class="section-tag">About Us</span>
+      <h1>About Zach’s Quality Services Inc</h1>
+      <p class="about-page-tagline">
+        Caring with excellence for people and places.
+      </p>
+
+      <p>
+        At Zach’s Quality Services Inc, we believe that cleaning is more than a task — 
+        it is an act of care, dedication, and respect. Our mission is to transform 
+        environments and value every person who makes this possible.
+      </p>
+
+      <p>
+        We deliver commercial cleaning with excellence, confidence, and a human touch 
+        that truly makes a difference. Every space we care for reflects the pride, 
+        commitment, and attention to detail of our team.
+      </p>
+
+      <p>
+        More than cleaning, we care — for spaces, for people, and for relationships. 
+        That is what moves us and what makes Zach’s Quality Services Inc a name associated 
+        with quality, trust, and humanity.
+      </p>
+    </div>
+
+    <!-- COLUNA DIREITA: IMAGEM -->
+    <div class="about-page-media">
+      <figure class="about-page-figure">
+        <img
+          src="images/about-zachs-team.jpg"
+          alt="Zach’s Quality Services Inc team caring for a client’s facility"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+
+  </div>
+</section>
+<section class="about-page-section about-leadership-section">
+  <div class="container about-page-grid leadership-grid">
+    
+    <!-- IMAGEM (PRIMEIRO NO DESKTOP, SEGUNDO NO MOBILE) -->
+    <div class="about-page-media">
+      <figure class="about-page-figure">
+        <img
+          src="images/owners-zachs.jpg"
+          alt="Zach’s Quality Services Inc owners working on-site"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+
+    <!-- TEXTO -->
+    <div class="about-page-content">
+      <span class="section-tag">Leadership & Values</span>
+      <h2>Owner-Operated Leadership</h2>
+      <p class="about-page-tagline">
+        The people who turned care into a company.
+      </p>
+
+      <p>
+        Zach’s Quality Services Inc is led by owners who see cleaning as a way to serve people 
+        with excellence. Before building a team, they spent years working directly in the field — 
+        learning every detail of the job, listening to clients, and understanding what truly matters 
+        in a facility: <strong>safety, consistency, and respect.</strong>
+      </p>
+
+      <p>
+        They built the company on a people-first mindset: investing in training, recognizing talent, 
+        and creating opportunities for growth. For them, a clean building is not the final goal — it 
+        is a visible sign that people are being cared for the right way.
+      </p>
+
+      <ul class="leadership-values">
+        <li><strong>Presence:</strong> owners and supervisors are visible — not just names on a contract.</li>
+        <li><strong>Respect:</strong> every employee and client is treated with dignity and transparency.</li>
+        <li><strong>Growth:</strong> a work environment based on ethics, recognition, and mutual development.</li>
+      </ul>
+
+      <blockquote class="leadership-quote">
+        “Caring with excellence for people is what moves us — 
+        our clients, our team, and every space we step into.”
+      </blockquote>
+    </div>
+
+  </div>
+</section>
+<div class="hero-divider"></div>
+ <section class="about-page-section values-culture-section">
+  <div class="container values-header">
+    <span class="section-tag">Values & Culture</span>
+    <h2 class="values-title">
+      The principles that guide how we work every day.
+    </h2>
+    <p class="values-intro">
+      Our culture is built on respect, ethics, and a genuine passion for serving well.
+      The way we clean, communicate, and make decisions is guided by clear values
+      that put people at the center.
+    </p>
+  </div>
+
+  <div class="container values-main">
+    <!-- TRACK DE CARDS -->
+    <div class="values-cards-track" data-values-track>
+      <!-- Card 1 -->
+      <article class="value-card">
+        <h3>Respect & appreciation</h3>
+        <p>
+          We value every person involved in our work — clients, employees, and partners.
+          A clean environment begins with respect for people.
+        </p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="value-card">
+        <h3>Commitment to quality</h3>
+        <p>
+          We are committed to delivering consistent, professional results, with attention
+          to detail and responsibility in every task.
+        </p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="value-card">
+        <h3>Ethics & trust</h3>
+        <p>
+          Transparency, honesty, and integrity guide our decisions and our relationships,
+          inside and outside the company.
+        </p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="value-card">
+        <h3>Care for the environment</h3>
+        <p>
+          We care for the spaces we serve and the impact of our work, seeking safer
+          practices for people and the environment.
+        </p>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="value-card">
+        <h3>Passion for serving well</h3>
+        <p>
+          We are driven by the desire to serve with excellence, bringing peace of mind
+          to our clients and pride to our team.
+        </p>
+      </article>
+    </div>
+
+    <!-- FOTO EMBAIXO DOS CARDS -->
+    <figure class="values-photo">
+      <img
+        src="images/zachs-team-night-shift.jpg"
+        alt="Zach’s Quality Services team working and smiling during a night shift"
+        loading="lazy"
+      />
+      <figcaption>
+        Zach’s Quality Services team working and smiling during a night shift.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+<section class="about-page-section zachs-section">
+  <div class="container zachs-header">
+    <h2 class="zachs-title">Z.A.C.H.S. – The foundation of our culture.</h2>
+    <p class="zachs-subtitle">
+      Each letter in ZACHS represents a principle that shapes our daily work, our decisions,
+      and the way we relate to our clients and team.
+    </p>
+  </div>
+
+  <div class="container zachs-grid">
+    <!-- Z -->
+    <article class="zachs-card">
+      <h3>Z – Zeal</h3>
+      <p>
+        Care and attention to every detail of the service. We clean as if every space were our own.
+      </p>
+    </article>
+
+    <!-- A -->
+    <article class="zachs-card">
+      <h3>A – Assistance</h3>
+      <p>
+        Customer-focused support, with empathy and respect, always looking for the best way to help.
+      </p>
+    </article>
+
+    <!-- C -->
+    <article class="zachs-card">
+      <h3>C – Confidence</h3>
+      <p>
+        A solid foundation for lasting relationships, built on consistency, transparency, and visible results.
+      </p>
+    </article>
+
+    <!-- H -->
+    <article class="zachs-card">
+      <h3>H – Honesty</h3>
+      <p>
+        Transparency and ethics in all actions, from communication to decision-making and daily routines.
+      </p>
+    </article>
+
+    <!-- S -->
+    <article class="zachs-card">
+      <h3>S – Safety</h3>
+      <p>
+        Ensuring a clean and secure environment for everyone — your staff, visitors, and our team.
+      </p>
+    </article>
+  </div>
+</section>
+  <div class="hero-divider"></div>
+<section class="about-page-section about-story-section">
+  <div class="container about-story-grid">
+    
+    <!-- COLUNA ESQUERDA – FOTO -->
+    <div class="about-story-media">
+      <figure class="about-story-figure">
+        <img
+          src="images/about-story-building.jpg"
+          alt="Commercial building being cleaned by Zach’s Quality Services team"
+          loading="lazy"
+        />
+      </figure>
+    </div>
+
+    <!-- COLUNA DIREITA – TEXTO + TIMELINE -->
+    <div class="about-story-content">
+      <span class="section-tag">Our Story, Mission & Vision</span>
+      <h2>From a simple idea to a people-centered cleaning partner.</h2>
+
+      <p>
+        Zach’s Quality Services Inc was born from a simple conviction: 
+        <strong>the way we care for spaces should reflect the way we care for people.</strong> 
+        We started with a small number of clients and grew through trust, referrals, and 
+        consistent results.
+      </p>
+
+      <p>
+        From day one, our focus has been to combine professional commercial cleaning 
+        with genuine respect for every person involved — clients, employees, and building users. 
+        Today, we serve different types of facilities, but our core remains the same: 
+        care, excellence, and humanity in everything we do.
+      </p>
+
+      <ol class="about-timeline">
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <h3>Mission</h3>
+            <p>
+              To transform environments with excellence and care, valuing every person 
+              who makes this possible.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <h3>Vision</h3>
+            <p>
+              To become a reference in commercial cleaning, recognized for the quality 
+              of our services and for our commitment to the well-being and growth of our team, 
+              where the shine of every environment reflects the value of each professional.
+            </p>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-body">
+            <h3>Today</h3>
+            <p>
+              A trusted partner for businesses that want consistent cleaning, clear communication, 
+              and a company that truly values people.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+    <!-- HIRING & TRAINING SYSTEMS -->
+    <section class="about-page-section hiring-training-section">
+      <div class="container hiring-training-grid">
+        
+        <!-- LEFT – IMAGE / VISUAL -->
+        <div class="about-story-media">
+          <figure class="about-story-figure">
+            <img
+              src="images/hiring-training-team.jpg"
+              alt="Zach’s Quality Services team during hiring and training"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+
+        <!-- RIGHT – TEXT / TIMELINES -->
+        <div class="hiring-training-content">
+          <span class="section-tag">Hiring & Training</span>
+          <h2>How we select, train, and support our team.</h2>
+
+          <p>
+            Our team members are the backbone of our service. That’s why we use a
+            structured hiring and training system that protects your facility and
+            supports our people — from the first interview to ongoing development.
+          </p>
+
+          <div class="hiring-training-columns">
+            <!-- COLUMN 1 – HIRING SYSTEM -->
+            <article class="process-column">
+              <h3>Hiring system</h3>
+              <ol class="about-timeline process-timeline">
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Recruitment & local focus</h4>
+                    <p>
+                      We attract candidates through job portals, social media,
+                      referrals, and local outreach — prioritizing people who live
+                      close to your facility and want to build long-term careers.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Screening & interviews</h4>
+                    <p>
+                      Our HR team conducts phone screening and in-person interviews
+                      to evaluate experience, reliability, and alignment with our
+                      culture of professionalism and integrity.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Background checks</h4>
+                    <p>
+                      Approved candidates go through county and national background
+                      checks, plus reference verification, to maximize safety and
+                      trust for your facility.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Orientation & onboarding</h4>
+                    <p>
+                      New hires receive a structured orientation on our mission,
+                      policies, expectations, and work standards before starting in
+                      your building.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </article>
+
+            <!-- COLUMN 2 – TRAINING SYSTEM -->
+            <article class="process-column">
+              <h3>Training system</h3>
+              <ol class="about-timeline process-timeline">
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Cleaning protocols</h4>
+                    <p>
+                      We train our team on specific tasks and routines in each area
+                      of your facility — dusting, disinfecting, vacuuming, damp
+                      mopping, machine operation, and more, always with efficiency
+                      and attention to detail.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Safety procedures</h4>
+                    <p>
+                      Safety is non-negotiable. Training includes proper use of
+                      equipment, chemical handling, SDS sheets, PPE, and procedures
+                      to prevent accidents or injuries.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Customer service skills</h4>
+                    <p>
+                      Team members learn how to communicate clearly, solve
+                      problems, and act with courtesy and professionalism when
+                      interacting with your staff and visitors.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="timeline-item">
+                  <div class="timeline-marker"></div>
+                  <div class="timeline-body">
+                    <h4>Specialized & ongoing training</h4>
+                    <p>
+                      Depending on your needs, we provide training in infection
+                      control, green cleaning, and industry-specific standards —
+                      plus ongoing refreshers, certifications, and recognition for
+                      outstanding performance.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+</main>
+  <div class="hero-divider"></div>
+ <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    
+    <!-- BRAND -->
+    <div class="footer-column footer-brand">
+      <a href="index.html" class="footer-logo-link" aria-label="Zach’s Quality Services Home">
+        <img
+          src="images/logoz.png"
+          alt="Zach’s Quality Services logo"
+          class="footer-logo"
+          width="190"
+          height="60"
+        />
+      </a>
+      <p class="footer-tagline">
+        Commercial &amp; janitorial cleaning for offices, clinics and facilities across Massachusetts.
+      </p>
+    </div>
+
+    <!-- SERVICES (cada um em um HTML futuro) -->
+    <div class="footer-column footer-services">
+      <h2 class="footer-heading">Services</h2>
+      <ul class="footer-services-list">
+         <li><a href="janitorial.html">Nightly Janitorial</a></li>
+         <li><a href="day.html">Day Porter Services</a></li>
+         <li><a href="clinical.html">Clinical / Medical Cleaning</a></li>
+         <li><a href="floor.html">Floor Care & Buffing</a></li>
+         <li><a href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+         <li><a href="construction.html">Post-Construction Clean-Up</a></li>
+         <li><a href="carpet.html">Carpet & Upholstery Care</a></li>
+        <li><a href="desinfection.html">Disinfection & Sanitization</a></li>
+      </ul>
+    </div>
+
+    <!-- OUTRAS SEÇÕES DO SITE -->
+    <div class="footer-column footer-links">
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-links-list">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="tips.php">Tips &amp; Insights</a></li>
+        <li><a href="index.html#coverage-area">Coverage Area &amp; Insights</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="quote.html">Request a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT + CTA -->
+    <div class="footer-column footer-contact">
+      <h2 class="footer-heading">Contact</h2>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="footer-contact-label">Call</span>
+          <a href="tel:+15087268558">(508) 726-8558</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Email</span>
+          <a href="mailto:zachsqualityservices@gmail.com">zachsqualityservices@gmail.com</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Service Area</span>
+          Massachusetts (statewide)
+        </li>
+      </ul>
+
+      <!-- parágrafo só pra respiro e reforçar disponibilidade -->
+      <p class="footer-contact-note">
+        Prefer phone or text? Our team is ready to respond.
+      </p>
+
+      <!-- CTA: Desktop / Mobile -->
+      <div class="footer-cta-wrapper">
+        <!-- Desktop → contact page -->
+        <a href="contact.html" class="footer-cta footer-cta-desktop">Contact Us</a>
+        <!-- Mobile → SMS -->
+        <a href="sms:+15087268558" class="footer-cta footer-cta-mobile">Text Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL CENTRALIZADAS -->
+  <div class="footer-social">
+    <span class="footer-social-label">Connect with us</span>
+    <div class="footer-social-links">
+
+      <!-- FACEBOOK -->
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Facebook" class="social-icon">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
+
+      <!-- LINKEDIN -->
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn" class="social-icon">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Instagram" class="social-icon">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+
+      <!-- YOUTUBE -->
+      <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="YouTube" class="social-icon">
+        <img src="images/youtube.png" alt="YouTube" />
+      </a>
+
+      <!-- BARK -->
+      <a href="https://bark.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Bark" class="social-icon">
+        <img src="images/bark.png" alt="Bark" />
+      </a>
+
+      <!-- NEXTDOOR -->
+      <a href="https://nextdoor.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Nextdoor" class="social-icon">
+        <img src="images/nextdoor.png" alt="Nextdoor" />
+      </a>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2025 Zach’s Quality Services® — All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

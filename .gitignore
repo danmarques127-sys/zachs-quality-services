@@ -1,0 +1,16 @@
+﻿# --- Security / local config ---
+config.local.php
+
+# --- Local test scripts (do not deploy) ---
+testedb.php
+
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+
+# --- Optional: if you ever add node tooling ---
+node_modules/
+dist/
+.cache/

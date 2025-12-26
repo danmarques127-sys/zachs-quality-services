@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+  <!-- ========== BASIC HTML META ========== -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+
+  <!-- ========== TITLE ========== -->
+  <title>Zach's Quality Services® | Commercial &amp; Janitorial Cleaning Across Massachusetts</title>
+
+  <!-- ========== META DESCRIPTION ========== -->
+  <meta
+    name="description"
+    content="Professional commercial cleaning and janitorial services for offices, clinics, retail, and facilities. Based near Framingham, MA and serving businesses statewide across Massachusetts."
+  />
+
+  <!-- ========== KEYWORDS ========== -->
+  <meta
+    name="keywords"
+    content="commercial cleaning Massachusetts, janitorial services MA, office cleaning Framingham MA, facility cleaning, medical office cleaning, retail cleaning services"
+  />
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link
+    rel="canonical"
+    href="https://www.zachsqualityservices.com/"
+  />
+
+ <!-- FAVICONS CLÁSSICOS -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+
+<!-- APPLE TOUCH ICON (iOS – atalho na tela inicial) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+
+<!-- SAFARI / NAVEGADORES MODERNOS (icone recortável) -->
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0B163F">
+
+<!-- MANIFEST (Android / PWA) -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- CORES DO NAVEGADOR / SISTEMA -->
+<meta name="theme-color" content="#0B163F">
+<meta name="msapplication-TileColor" content="#0B163F">
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+
+  <!-- ========== OPEN GRAPH / SOCIAL SHARING ========== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zach's Quality Services" />
+  <meta
+    property="og:title"
+    content="Zach's Quality Services® | Commercial Cleaning &amp; Janitorial in Massachusetts"
+  />
+  <meta
+    property="og:description"
+    content="Reliable, professional commercial cleaning for offices, clinics, warehouses and retail locations. Serving all of Massachusetts."
+  />
+  <meta
+    property="og:url"
+    content="https://www.zachsqualityservices.com/"
+  />
+  <meta
+    property="og:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+  <meta
+    property="og:image:alt"
+    content="Commercial janitorial crew from Zach's Quality Services® on-site in Massachusetts."
+  />
+
+  <!-- ========== TWITTER CARD (X) ========== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Zach's Quality Services® | Statewide Commercial Cleaning (MA)"
+  />
+  <meta
+    name="twitter:description"
+    content="Janitorial, office cleaning, post-construction cleanup, floor care, day porter service. Massachusetts-wide coverage."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+
+  <!-- ========== LOCAL / SERVICE AREA SIGNALS ========== -->
+  <meta name="geo.region" content="US-MA" />
+  <meta name="geo.placename" content="Framingham" />
+  <meta name="geo.position" content="42.2793;-71.4162" />
+  <meta name="ICBM" content="42.2793, -71.4162" />
+
+  <!-- ========== INDEXING / CRAWLING POLICY ========== -->
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+  <meta
+    name="googlebot"
+    content="index, follow"
+  />
+
+  <!-- ========== BRAND / OWNERSHIP INFO ========== -->
+  <meta
+    name="author"
+    content="Zach's Quality Services®"
+  />
+  <meta
+    name="publisher"
+    content="Zach's Quality Services®"
+  />
+
+  <!-- ========== STRUCTURED DATA: CleaningService ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Zach's Quality Services®",
+    "url": "https://www.zachsqualityservices.com/",
+    "image": "https://www.zachsqualityservices.com/assets/logo.png",
+    "logo": "https://www.zachsqualityservices.com/assets/logo.png",
+    "description": "Commercial cleaning and janitorial services for offices, medical facilities, retail, industrial and post-construction sites. Serving all of Massachusetts.",
+    "slogan": "We don't cut corners — we clean them.",
+    "telephone": "(000) 000-0000",
+    "priceRange": "$$",
+    "areaServed": [
+      "Framingham MA",
+      "Greater Boston MA",
+      "Worcester County MA",
+      "All Massachusetts"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Framingham",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      }
+    ],
+    "serviceType": [
+      "Commercial Cleaning",
+      "Janitorial Services",
+      "Office Cleaning",
+      "Medical / Clinical Cleaning",
+      "Retail / Storefront Cleaning",
+      "Post-Construction Cleanup",
+      "Floor Care / Buffing / Waxing",
+      "Day Porter Service"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/zachsqualityservices",
+      "https://www.facebook.com/zachsqualityservices"
+    ]
+  }
+  </script>
+
+  <!-- ========== PERFORMANCE HINTS / FONT PRELOAD ========== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ========== BASELINE THEME / RESET ========== -->
+  <style>
+    :root {
+      --page-bg: #ffffff;
+      --text-main: #0a1a2f;
+      --accent: #1a4fa3;
+      --border-soft: #dbe2ef;
+      --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--page-bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+
+  <!-- ========== SITE STYLES & SCRIPTS ========== -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header-inner">
+      <div class="brand-block">
+        <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+          <img 
+            src="images/logoz.png" 
+            alt="Zach’s Quality Services logo"
+            class="brand-logo"
+            width="220"
+            height="70"
+          />
+        </a>
+      </div>
+
+      <!-- NAVIGATION (desktop) -->
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a class="main-nav-link" href="about.html">About Us</a></li>
+
+          <li class="main-nav-item main-nav-has-sub">
+            <button
+              class="main-nav-link main-nav-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="services-subnav"
+            >
+              Services
+              <span class="nav-caret" aria-hidden="true">▼</span>
+            </button>
+            <ul class="subnav-list" id="services-subnav" role="menu">
+              <li role="none"><a role="menuitem" class="subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="day.html">Day Porter Services</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav-item"><a class="main-nav-link" href="industries.html">Industries</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="reviews.html">Reviews</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="#coverage-area">Coverage Area</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA DESKTOP -->
+      <div class="header-cta-wrapper">
+        <a href="quote.html" class="header-cta-btn" data-cta="free-estimate">
+          Free Estimate
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <button class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE DRAWER -->
+    <aside class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <button class="mobile-close" aria-label="Close menu">&times;</button>
+
+        <div class="mobile-brand-block">
+          <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+            <img
+              src="images/logoa.png"
+              alt="Zach’s Quality Services logo"
+              class="mobile-brand-logo"
+              width="200"
+              height="60"
+            />
+          </a>
+        </div>
+
+        <nav class="mobile-nav-menu" role="navigation" aria-label="Mobile Primary">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="about.html">About Us</a></li>
+
+            <li class="mobile-nav-item mobile-nav-has-sub">
+              <button
+                class="mobile-nav-link mobile-nav-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-services-subnav"
+                type="button"
+              >
+                Services
+                <span class="nav-caret" aria-hidden="true">▼</span>
+              </button>
+
+              <ul class="mobile-subnav-list" id="mobile-services-subnav">
+                <li><a class="mobile-subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+                <li><a class="mobile-subnav-link" href="day.html">Day Porter Services</a></li>
+                <li><a class="mobile-subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+                <li><a class="mobile-subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+                <li><a class="mobile-subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+                <li><a class="mobile-subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+                <li><a class="mobile-subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+                <li><a class="mobile-subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="industries.html">Industries</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="reviews.html">Reviews</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="#coverage-area">Coverage Area</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <a class="mobile-cta-btn" href="quote.html" data-cta="free-estimate-mobile">
+          Free Estimate
+        </a>
+
+        <div class="mobile-contact-block">
+          <div class="contact-line">
+            <span class="contact-label">Call:</span>
+            <a class="contact-value" href="tel:+15087268558">(508) 726-8558</a>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Headquarters:</span>
+            <span class="contact-value">
+              123 Main St<br>
+              Framingham, MA 01701
+            </span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Coverage:</span>
+            <span class="contact-value">Massachusetts (statewide)</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Availability:</span>
+            <span class="contact-value">24/7 Emergency Response</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- dark overlay behind drawer -->
+    <div class="mobile-overlay" aria-hidden="true"></div>
+  </header>
+
+  <!-- hero e resto da página virão aqui depois -->
+ <main>
+  <section class="hero hero-with-carousel" id="home">
+    <!-- Fundo com slides -->
+    <div class="hero-bg">
+      <div class="hero-bg-slide is-active" data-bg="images/hero-1.jpg"></div>
+      <div class="hero-bg-slide" data-bg="images/hero-2.jpg"></div>
+      <div class="hero-bg-slide" data-bg="images/hero-3.jpeg"></div>
+      <div class="hero-bg-slide" data-bg="images/hero-4.jpg"></div>
+      <div class="hero-bg-slide" data-bg="images/hero-5.jpeg"></div>
+    </div>
+
+    <!-- Overlay de cor -->
+    <div class="hero-overlay"></div>
+
+    <!-- Conteúdo -->
+    <div class="hero-inner">
+      <div class="hero-copy reveal-on-scroll">
+        <p class="hero-eyebrow">Commercial &amp; Janitorial Cleaning in Massachusetts</p>
+
+        <h1 class="hero-title">
+          We don’t cut corners —<br>
+          <span>we clean them.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Professional, reliable cleaning for offices, clinics, warehouses and retail.
+          Nightly programs, day porters and emergency response across Massachusetts.
+        </p>
+
+        <ul class="hero-bullets">
+          <li>Nightly janitorial programs for offices &amp; facilities</li>
+          <li>Clinical / medical office cleaning with strict protocols</li>
+          <li>Post-construction clean-up &amp; floor care</li>
+        </ul>
+
+        <div class="hero-cta-row">
+          <!-- Desktop: Contact Us Now -->
+          <a href="contact.html" class="hero-cta hero-cta-desktop">
+            Contact Us Now
+          </a>
+
+          <!-- Mobile: Text Us -->
+          <a href="sms:+15085551234" class="hero-cta hero-cta-mobile">
+            Text Us
+          </a>
+
+          <p class="hero-note">
+            Response within 1 business day • Massachusetts (statewide)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLES DO CARROSSEL -->
+    <div class="hero-carousel-controls" aria-label="Background image controls"></div>
+  </section>
+  <div class="hero-divider"></div>
+
+  <section class="about-section" id="about">
+  <div class="container about-grid">
+    
+    <!-- LEFT: SEO Text -->
+    <div class="about-content">
+      <span class="section-tag">Hear About Us</span>
+      <h2>
+        Why Businesses Choose 
+        <span class="brand-highlight">Zach’s Quality Services Inc</span>
+      </h2>
+
+      <p>
+        Zach’s Quality Services Inc provides professional commercial cleaning services 
+        for offices, medical facilities, schools, condominiums and other business environments 
+        across Massachusetts. Our teams are trained, supervised and focused on consistent 
+        results, so your facility always looks clean, safe and ready to receive clients and staff.
+      </p>
+
+      <p>
+        We combine detailed cleaning routines with reliable scheduling, clear communication 
+        and strict safety standards. From daily office cleaning to floor care, post-construction 
+        clean-ups and special projects, we build customized plans that match each client’s 
+        operations, budget and compliance requirements.
+      </p>
+
+      <p>
+        Our clients stay with us because they know they can rely on a responsive partner that 
+        cares about their image as much as they do. Every visit is an opportunity to protect 
+        your brand, your people and your workplace.
+      </p>
+
+      <p class="about-quote">
+        <strong>Real clients, real environments, real results.</strong>
+      </p>
+
+      <p>
+        In the testimonial on the right, one of our commercial clients shares how 
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span> helped improve 
+        the appearance, hygiene and day-to-day experience of their building.
+      </p>
+    </div>
+
+    <!-- RIGHT: Video Card -->
+    <div class="about-video">
+      <div class="video-card">
+        <span class="video-tag">Client Testimonial</span>
+
+        <h3>Client: Greenfield Medical Center</h3>
+
+        <p class="video-meta">
+          <strong>Service provided:</strong> Full commercial cleaning program including 
+          exam rooms, common areas, floors and ongoing maintenance.
+        </p>
+
+        <p class="video-meta">
+          <strong>Contact:</strong> Emma Collins, Facility Manager · 
+          <a href="mailto:emma.collins@greenfieldmedical.com">
+            emma.collins@greenfieldmedical.com
+          </a> · (555) 987-6543
+        </p>
+
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/XEheV37JyXw" 
+            title="Client testimonial - Zach's Quality Services Inc"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<div class="section-divider"></div>
+<section class="founders-section" id="founders">
+  <div class="container founders-grid">
+
+    <!-- FOTO À ESQUERDA -->
+    <div class="founders-photo">
+      <div class="founders-photo-card">
+        <!-- Substituir quando tiver a foto real -->
+        <img 
+          src="images/zachs-founders.png" 
+          alt="Zacharias and Rose, founders of Zach’s Quality Services Inc" 
+        />
+        <div class="founders-caption">
+          Zacharias &amp; Rose — Founders of <span class="brand-highlight-inline">Zach’s Quality Services Inc</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEXTO À DIREITA -->
+    <div class="founders-content">
+      <span class="section-tag">Our Story</span>
+      <h2>
+        The People Behind 
+        <span class="brand-highlight">Zach’s Quality Services Inc</span>
+      </h2>
+
+      <p>
+        <strong>Zacharias</strong> and <strong>Rose</strong> are a Brazilian couple 
+        who chose Marlborough, MA as the place to build both their life and their business. 
+        With dedication, resilience and a hands-on approach, they transformed their 
+        experience in commercial cleaning into what is now 
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span>.
+      </p>
+
+      <p>
+        Their values are reflected in every service: commitment to quality, respect for clients, 
+        investment in people and strong work ethics. They believe that a clean facility is more 
+        than an image — it is a way to protect people, create productivity and represent 
+        professionalism every day.
+      </p>
+
+      <p class="founders-quote">
+        <strong>What started as a dream became a mission — to build a company that cares for places and people.</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
+<div class="hero-divider"></div>
+
+<section class="services-industries-section" id="services-industries">
+  <div class="container si-container">
+
+    <div class="si-header">
+      <span class="section-tag">Services &amp; Industries</span>
+      <h2>
+        How <span class="brand-highlight">Zach’s Quality Services Inc</span> Supports Your Facility
+      </h2>
+      <p>
+        We provide structured, professional commercial cleaning programs tailored to each facility’s 
+        operations, schedule and standards. Below you can see what we do and the types of environments 
+        we serve every day across Massachusetts.
+      </p>
+    </div>
+
+    <div class="si-cards">
+      <!-- Card 1: What We Do -->
+      <article class="si-card">
+        <h3>What We Do</h3>
+        <p class="si-card-subtitle">
+          Core commercial cleaning services delivered with consistent routines and trained teams.
+        </p>
+        <ul class="si-list">
+          <li><a href="janitorial.html">Nightly janitorial cleaning</a></li>
+          <li><a href="day.html">Day Porter Services</a></li>
+          <li><a href="clinical.html">Clinical / Medical Cleaning</a></li>
+          <li><a href="floor.html">Floor Care & Buffing</a></li>
+          <li><a href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+          <li><a href="construction.html">Post-construction clean-up</a></li>
+          <li><a href="carpet.html">Carpet & Upholstery Care</a></li>
+          <li><a href="desinfection.html">Disinfection & Sanitization</a></li>
+        </ul>
+      </article>
+
+      <!-- Card 2: Where We Work -->
+      <article class="si-card">
+        <h3>Where We Work</h3>
+        <p class="si-card-subtitle">
+          Environments that rely on a clean, safe and welcoming space for clients, patients and staff.
+        </p>
+        <ul class="si-list">
+          <li><a href="industries.html">Offices and corporate buildings</a></li>
+          <li><a href="industries.html">Medical and dental clinics</a></li>
+          <li><a href="industries.html">Schools and daycare centers</a></li>
+          <li><a href="industries.html">Condominium and common areas</a></li>
+          <li><a href="industries.html">Industrial and manufacturing facilities</a></li>
+          <li><a href="industries.html">Retail stores and showrooms</a></li>
+          <li><a href="industries.html">Other commercial and professional spaces</a></li>
+        </ul>
+      </article>
+    </div>
+
+    <!-- Hint / arrows for mobile swipe -->
+    <div class="si-scroll-hint">
+      <span class="si-arrow si-arrow-left">←</span>
+      <span class="si-hint-text">Swipe to see more</span>
+      <span class="si-arrow si-arrow-right">→</span>
+    </div>
+
+  </div>
+</section>
+<div class="hero-divider"></div>
+
+<section class="why-choose-section" id="why-choose-us">
+  <div class="container why-grid">
+
+    <!-- LEFT – Text -->
+    <div class="why-content">
+      <span class="section-tag">Why Choose Us</span>
+      <h2>Why Companies Choose <span class="brand-highlight">Zach’s Quality Services Inc</span></h2>
+
+      <ul class="why-list">
+        <li>
+          <strong>Trained & Supervised Teams</strong>
+          <p>Consistent cleaning routines with close supervision and training.</p>
+        </li>
+        <li>
+          <strong>Clear Communication</strong>
+          <p>Scheduling, accountability and reports to ensure full transparency.</p>
+        </li>
+        <li>
+          <strong>Customized Service Plans</strong>
+          <p>Every facility is unique – we adapt to your operations, needs and budget.</p>
+        </li>
+        <li>
+          <strong>Safety & Compliance</strong>
+          <p>OSHA standards, PPE and cleaning protocols that protect people and workplaces.</p>
+        </li>
+        <!-- Se tiver seguro/licença depois, adicionar: -->
+        <!-- <li><strong>Licensed & Insured</strong><p>Protecting your facility, people and reputation.</p></li> -->
+      </ul>
+    </div>
+
+    <!-- RIGHT – IMAGE -->
+    <div class="why-image">
+      <img src="images/cleaning-team.png" alt="Professional cleaning team at work" />
+    </div>
+
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- ===== Reviews ===== -->
+<section class="cta-reviews-section" id="contact-reviews">
+  <div class="container cta-wrapper">
+    <div class="cta-content">
+      <span class="section-tag">Ready to Get Started?</span>
+      <h2>Let’s Clean Your Facility With Excellence</h2>
+      <p>
+        Whether you manage an office, clinic, school or industrial facility, 
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span> is ready to design a 
+        cleaning program that fits your operations and standards.
+      </p>
+
+      <div class="cta-phone">
+        <span>Call us today:</span>
+        <!-- troque pelo número real -->
+        <a href="tel:+15085551234" class="cta-phone-number">+1 (508) 555-1234</a>
+      </div>
+
+      <div class="cta-actions">
+        <!-- Desktop: Contact Us -->
+        <a href="contact.html" class="cta-btn cta-btn-desktop">
+          Contact Us
+        </a>
+
+        <!-- Mobile: Text Us -->
+        <a href="sms:+15085551234" class="cta-btn cta-btn-mobile">
+          Text Us
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container reviews-wrapper">
+    <div class="reviews-header">
+      <span class="section-tag">Reviews</span>
+      <h3>What Our Clients Say</h3>
+      <p>
+        Real feedback from clients who trust 
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span> with their facilities.
+      </p>
+    </div>
+
+    <div class="reviews-cards">
+      <!-- Review 1 -->
+      <article class="review-card">
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          “Zach’s Quality Services Inc has been taking care of our office for years. 
+          The team is reliable, detailed and always responsive when we need something.”
+        </p>
+        <div class="review-meta">
+          <span class="review-name">Laura M.</span>
+          <span class="review-source">Office Manager · via Google Reviews</span>
+        </div>
+      </article>
+
+      <!-- Review 2 -->
+      <article class="review-card">
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          “They understood the specific requirements of our medical space and built a 
+          cleaning routine that keeps everything safe, compliant and looking professional.”
+        </p>
+        <div class="review-meta">
+          <span class="review-name">Dr. Anthony R.</span>
+          <span class="review-source">Clinic Director · via Google Reviews</span>
+        </div>
+      </article>
+
+      <!-- Review 3 -->
+      <article class="review-card">
+        <div class="review-rating">★★★★★</div>
+        <p class="review-text">
+          “Great communication, consistent results and a team that clearly cares. 
+          Our building has never looked this good.”
+        </p>
+        <div class="review-meta">
+          <span class="review-name">Michael S.</span>
+          <span class="review-source">Property Manager · via Google Reviews</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Hint de scroll no mobile -->
+    <div class="reviews-scroll-hint">
+      <span class="reviews-arrow">←</span>
+      <span class="reviews-hint-text">Swipe to see more reviews</span>
+      <span class="reviews-arrow">→</span>
+    </div>
+  </div>
+</section>
+<div class="hero-divider"></div>
+
+<!-- ===== Coverage Area ===== -->
+<section id="coverage-area" class="covwrap">
+  <section id="coverage-map" class="covmap">
+    <div class="covmap-head">
+      <h3>Find Out If We Cover Your Address</h3>
+
+      <form id="addr-form" class="addr-form" novalidate>
+        <input
+          id="addr-input"
+          type="text"
+          placeholder="Enter ZIP or city/address in MA (e.g., 01718, Chelsea MA)"
+          aria-label="Enter address or ZIP"
+          inputmode="text"
+          autocomplete="postal-code"
+        >
+        <button id="addr-submit" type="submit" aria-label="Check coverage">
+          Check Coverage
+        </button>
+        <button type="button" id="gps-btn" aria-label="Use my location" class="gps">
+          Use my location
+        </button>
+        <small id="addr-status" role="status" aria-live="polite"></small>
+      </form>
+
+      <details class="diag">
+        <summary>Diagnostics</summary>
+        <pre id="diag-log">ready</pre>
+      </details>
+    </div>
+
+    <div id="map"></div>
+  </section>
+</section>
+
+<!-- Leaflet + Turf -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@turf/turf@6.5.0/turf.min.js"></script>
+
+<script>
+  const GEOAPIFY_KEY = "cdc55a56b5a3412bb42675dcb6b638f7";
+  const MARLBOROUGH = { lon: -71.5523, lat: 42.3459 };
+
+  // --- Counties cobertos ---
+  const MA_COUNTIES = [
+    "barnstable county", "berkshire county", "bristol county", "dukes county",
+    "essex county", "franklin county", "hampden county", "hampshire county",
+    "middlesex county", "nantucket county", "norfolk county", "plymouth county",
+    "suffolk county", "worcester county"
+  ];
+  const CT_NORTH_COUNTIES = [ "hartford county", "tolland county", "windham county", "litchfield county" ];
+  const RI_NORTH_COUNTIES = [ "providence county", "bristol county", "kent county" ];
+
+  const ALLOWED_COUNTIES = new Set([...MA_COUNTIES, ...CT_NORTH_COUNTIES, ...RI_NORTH_COUNTIES]);
+
+  const MA_VIEW_RECT = "-74.0,41.0,-70.0,43.0";
+  const boundsNE = L.latLngBounds([41.0, -74.5], [43.5, -69.0]);
+
+  // === MAPA ===
+  const map = L.map("map", { scrollWheelZoom: false })
+    .setView([MARLBOROUGH.lat, MARLBOROUGH.lon], 8);   // 👈 AGORA TEM SETVIEW!
+
+
+  L.tileLayer(
+    `https://maps.geoapify.com/v1/tile/osm-bright/{z}/{x}/{y}.png?apiKey=${GEOAPIFY_KEY}`,
+    { attribution: "© OpenStreetMap contributors, © Geoapify", maxZoom: 19 }
+  ).addTo(map);
+
+  map.setMaxBounds(boundsNE);
+  map.on("drag", () => map.panInsideBounds(boundsNE, { animate: false }));
+
+  // Corrige tela branca / 256px bug
+  window.addEventListener("load", () => {
+    setTimeout(() => { map.invalidateSize(); }, 300);
+  });
+
+  // Marlborough
+  L.circleMarker([MARLBOROUGH.lat, MARLBOROUGH.lon], {
+    radius: 7, color: "#2563eb", fillColor: "#2563eb", fillOpacity: 1
+  }).addTo(map).bindPopup("Marlborough, MA");
+
+  const countiesLayer = L.layerGroup().addTo(map);
+
+  // Buscar counties
+  async function fetchCountyGeoJSON(countyName) {
+    const params = new URLSearchParams({
+      format: "geojson",
+      polygon_geojson: "1",
+      q: `${countyName}`
+    });
+    const url = `https://nominatim.openstreetmap.org/search?${params.toString()}`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Nominatim counties HTTP " + r.status);
+    const gj = await r.json();
+    const feat = gj?.features?.find(f =>
+      (f.properties?.type || "").toLowerCase().includes("county")
+    ) || gj?.features?.[0];
+    return feat || null;
+  }
+
+  // DESENHAR AREAS ATENDIDAS + ENQUADRAR NO MAPA
+  async function drawCoveredCounties() {
+    countiesLayer.clearLayers();
+
+    const COVERED_COUNTY_NAMES = [
+      // Massachusetts
+      "Barnstable County, Massachusetts, USA",
+      "Berkshire County, Massachusetts, USA",
+      "Bristol County, Massachusetts, USA",
+      "Dukes County, Massachusetts, USA",
+      "Essex County, Massachusetts, USA",
+      "Franklin County, Massachusetts, USA",
+      "Hampden County, Massachusetts, USA",
+      "Hampshire County, Massachusetts, USA",
+      "Middlesex County, Massachusetts, USA",
+      "Nantucket County, Massachusetts, USA",
+      "Norfolk County, Massachusetts, USA",
+      "Plymouth County, Massachusetts, USA",
+      "Suffolk County, Massachusetts, USA",
+      "Worcester County, Massachusetts, USA",
+
+      // North CT
+      "Hartford County, Connecticut, USA",
+      "Tolland County, Connecticut, USA",
+      "Windham County, Connecticut, USA",
+      "Litchfield County, Connecticut, USA",
+
+      // North RI
+      "Providence County, Rhode Island, USA",
+      "Bristol County, Rhode Island, USA",
+      "Kent County, Rhode Island, USA"
+    ];
+
+    for (const name of COVERED_COUNTY_NAMES) {
+      try {
+        const feat = await fetchCountyGeoJSON(name);
+        if (!feat) continue;
+        L.geoJSON(feat, {
+          style: {
+            color: "#1d4ed8",
+            weight: 2,
+            fillColor: "#1d4ed8",
+            fillOpacity: 0.10
+          }
+        }).addTo(countiesLayer);
+      } catch (e) { logDiag(`county ${name} failed: ${e.message}`); }
+    }
+
+    // 👈 AGORA SIM: SÓ ENQUADRA DEPOIS QUE OS LAYERS ESTÃO NO MAPA
+    if (countiesLayer.getLayers().length > 0) {
+      const groupBounds = countiesLayer.getBounds();
+      map.fitBounds(groupBounds, { padding: [20, 20] });
+    }
+  }
+
+  drawCoveredCounties();  // 👈 Chama no fim!
+
+  // resto do script = igual...
+
+  const diagEl = document.getElementById("diag-log");
+  function logDiag(msg) {
+    if (!diagEl) return;
+    diagEl.textContent += `\n${new Date().toLocaleTimeString()}: ${msg}`;
+  }
+
+  function normalizeCounty(name) {
+    return String(name || "").trim().toLowerCase();
+  }
+  function isCoveredCounty(name) {
+    return ALLOWED_COUNTIES.has(normalizeCounty(name));
+  }
+
+  function pinAndZoom(lat, lon, html, covered) {
+    L.circleMarker([lat, lon], {
+      radius: 6,
+      color: covered ? "#16a34a" : "#b91c1c",
+      fillColor: covered ? "#16a34a" : "#b91c1c",
+      fillOpacity: 1
+    }).addTo(map).bindPopup(html).openPopup();
+    map.flyTo([lat, lon], 11, { duration: 0.8 });
+  }
+
+  async function geocodeGeoapify(query) {
+    const q = (query || "").trim();
+    if (!q) return null;
+    const isZip = /^\d{5}$/.test(q);
+
+    const params = new URLSearchParams({
+      limit: "1",
+      lang: "en",
+      apiKey: GEOAPIFY_KEY,
+      bias: `rect:${MA_VIEW_RECT}`
+    });
+    params.append("filter", "countrycode:us");
+    params.append("types", isZip ? "postcode" : "street,city,postcode");
+    params.append("text", q);
+
+    const url = `https://api.geoapify.com/v1/geocode/search?${params.toString()}`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Geoapify HTTP " + r.status);
+    const j = await r.json();
+    const f = j.features?.[0];
+    if (!f) return null;
+    return {
+      lon: f.properties.lon,
+      lat: f.properties.lat,
+      label: f.properties.formatted || f.properties.name || q,
+      provider: "geoapify"
+    };
+  }
+
+  async function geocodeNominatim(query) {
+    const q = (query || "").trim();
+    if (!q) return null;
+    const p = new URLSearchParams({
+      format: "jsonv2",
+      q,
+      addressdetails: "1",
+      limit: "1",
+      countrycodes: "us",
+      bounded: "1",
+      viewbox: "-74.0,43.0,-70.0,40.8",
+      "accept-language": "en"
+    });
+    const url = `https://nominatim.openstreetmap.org/search?${p.toString()}`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Nominatim HTTP " + r.status);
+    const j = await r.json();
+    if (!Array.isArray(j) || !j[0]) return null;
+    const f = j[0];
+    return {
+      lon: parseFloat(f.lon),
+      lat: parseFloat(f.lat),
+      label: f.display_name || q,
+      provider: "nominatim"
+    };
+  }
+
+  async function forwardGeocode(query) {
+    try {
+      const g = await geocodeGeoapify(query);
+      if (g) {
+        logDiag(`forward: Geoapify OK (${g.provider})`);
+        return g;
+      }
+    } catch (e) {
+      logDiag("Geoapify error: " + e.message);
+    }
+    try {
+      const n = await geocodeNominatim(query);
+      if (n) {
+        logDiag(`forward: Nominatim OK (${n.provider})`);
+        return n;
+      }
+    } catch (e) {
+      logDiag("Nominatim error: " + e.message);
+    }
+    return null;
+  }
+
+  async function reverseCountyGeoapify(lat, lon) {
+    const params = new URLSearchParams({
+      lat,
+      lon,
+      lang: "en",
+      limit: "1",
+      apiKey: GEOAPIFY_KEY
+    });
+    const url = `https://api.geoapify.com/v1/geocode/reverse?${params.toString()}`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Reverse Geoapify HTTP " + r.status);
+    const j = await r.json();
+    const f = j.features?.[0];
+    if (!f) return null;
+    return {
+      county: f.properties.county || f.properties.state_district || null,
+      formatted: f.properties.formatted || ""
+    };
+  }
+
+  async function reverseCountyNominatim(lat, lon) {
+    const p = new URLSearchParams({
+      format: "jsonv2",
+      lat,
+      lon,
+      zoom: "10",
+      addressdetails: "1",
+      "accept-language": "en"
+    });
+    const url = `https://nominatim.openstreetmap.org/reverse?${p.toString()}`;
+    const r = await fetch(url);
+    if (!r.ok) throw new Error("Reverse Nominatim HTTP " + r.status);
+    const j = await r.json();
+    return {
+      county: j?.address?.county || j?.address?.state_district || null,
+      formatted: j?.display_name || ""
+    };
+  }
+
+  const submitBtn = document.getElementById("addr-submit");
+  const statusEl = document.getElementById("addr-status");
+
+  function setLoading(loading, btn, labelIdle = "Check Coverage") {
+    if (!btn) return;
+    btn.disabled = loading;
+    btn.dataset.labelIdle = btn.dataset.labelIdle || labelIdle;
+    btn.textContent = loading ? "Checking…" : btn.dataset.labelIdle;
+  }
+
+  async function getCounty(lat, lon) {
+    try {
+      const g = await reverseCountyGeoapify(lat, lon);
+      if (g) {
+        logDiag("reverse: Geoapify OK");
+        return g;
+      }
+    } catch (e) {
+      logDiag("reverse Geoapify error: " + e.message);
+    }
+    try {
+      const n = await reverseCountyNominatim(lat, lon);
+      if (n) {
+        logDiag("reverse: Nominatim OK");
+        return n;
+      }
+    } catch (e) {
+      logDiag("reverse Nominatim error: " + e.message);
+    }
+    return { county: null, formatted: "" };
+  }
+
+  async function locateAndDecide(raw) {
+    statusEl.textContent = "Checking…";
+    setLoading(true, submitBtn);
+    const geo = await forwardGeocode(raw);
+    if (!geo) {
+      statusEl.textContent = "Not found in MA / CT / RI region.";
+      setLoading(false, submitBtn);
+      return;
+    }
+
+    const km = turf.distance(
+      turf.point([MARLBOROUGH.lon, MARLBOROUGH.lat]),
+      turf.point([geo.lon, geo.lat]),
+      { units: "kilometers" }
+    );
+    if (km > 400) {
+      statusEl.textContent = "Outside our New England region.";
+      setLoading(false, submitBtn);
+      return;
+    }
+
+    const rev = await getCounty(geo.lat, geo.lon);
+    const countyName = rev?.county || "(unknown county)";
+    const covered = isCoveredCounty(countyName);
+
+    const html =
+      `${geo.label}<br>County: ${countyName}<br>` +
+      `${covered ? "✅ Covered County" : "❌ Outside Covered Counties"}`;
+
+    pinAndZoom(geo.lat, geo.lon, html, covered);
+
+    statusEl.textContent = covered
+      ? "✅ Covered — request your free estimate!"
+      : "❌ Outside our counties — contact us and we’ll try to fit you in.";
+
+    setLoading(false, submitBtn);
+  }
+
+  document.getElementById("addr-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const raw = document.getElementById("addr-input").value.trim();
+    if (!raw) {
+      statusEl.textContent = "Please enter an address or ZIP.";
+      return;
+    }
+    locateAndDecide(raw);
+  });
+
+  document.getElementById("gps-btn").addEventListener("click", () => {
+    if (!navigator.geolocation) {
+      statusEl.textContent = "Geolocation not supported by this browser.";
+      return;
+    }
+    statusEl.textContent = "Getting your location…";
+    setLoading(true, submitBtn);
+    navigator.geolocation.getCurrentPosition(
+      async (pos) => {
+        const lat = pos.coords.latitude;
+        const lon = pos.coords.longitude;
+        const rev = await getCounty(lat, lon);
+        const countyName = rev?.county || "(unknown county)";
+        const covered = isCoveredCounty(countyName);
+        const label = rev?.formatted || "Your location";
+        const html =
+          `${label}<br>County: ${countyName}<br>` +
+          `${covered ? "✅ Covered County" : "❌ Outside Covered Counties"}`;
+        pinAndZoom(lat, lon, html, covered);
+        statusEl.textContent = covered
+          ? "✅ Covered — request your free estimate!"
+          : "❌ Outside our counties — contact us and we’ll try to fit you in.";
+        setLoading(false, submitBtn);
+      },
+      () => {
+        statusEl.textContent = "Couldn’t access your GPS location.";
+        setLoading(false, submitBtn);
+      },
+      { timeout: 8000 }
+    );
+  });
+</script>
+<div class="hero-divider"></div>
+
+<section id="faq" class="faq-section">
+  <div class="container faq-inner">
+    <div class="faq-header">
+      <span class="section-tag">FAQ · Frequently Asked Questions</span>
+      <h2>Questions About <span class="brand-highlight">Zach’s Quality Services Inc</span></h2>
+      <p>
+        Here are some of the most common questions businesses ask us about our
+        commercial &amp; janitorial cleaning programs across Massachusetts.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <!-- FAQ 1 -->
+      <details class="faq-item" open>
+        <summary>
+          <span>What types of facilities do you clean?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            We focus on commercial environments such as offices, corporate
+            buildings, medical and dental clinics, schools and daycare centers,
+            industrial facilities, condominium common areas, retail stores and
+            other professional spaces. If your building receives clients,
+            patients or staff, we can likely support your facility.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details class="faq-item">
+        <summary>
+          <span>Do you offer nightly janitorial programs?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            Yes. Nightly janitorial programs are one of our core services. We
+            build a routine based on your operating hours, building layout and
+            cleaning priorities, including restrooms, trash removal, dusting,
+            floor care and common areas. Schedules can be set for several days
+            per week or daily service.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details class="faq-item">
+        <summary>
+          <span>Do you bring the cleaning products and equipment?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            In most cases, yes. Our teams work with professional commercial
+            products, equipment and tools appropriate for each surface and
+            environment. If your organization has specific brands, green
+            cleaning requirements or restricted chemicals, we can adapt our
+            program and work with your preferred products as well.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 4 -->
+      <details class="faq-item">
+        <summary>
+          <span>Are your cleaners trained and supervised?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            Absolutely. Zach’s Quality Services Inc invests in training,
+            supervision and clear checklists so that each visit is consistent.
+            Supervisors perform walk-throughs, provide feedback and remain
+            available to you for any questions, corrections or special
+            requests.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 5 -->
+      <details class="faq-item">
+        <summary>
+          <span>Do you handle one-time or post-construction clean-ups?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            Yes. Besides ongoing janitorial programs, we also provide
+            post-construction clean-up, move-in / move-out cleaning and special
+            projects such as deep cleaning, floor scrubbing &amp; buffing and
+            floor waxing. Let us know your project timeline and scope so we can
+            plan the right crew and equipment.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 6 -->
+      <details class="faq-item">
+        <summary>
+          <span>What is your service area?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            We are based near Marlborough and serve facilities across
+            Massachusetts, including Greater Boston, MetroWest, Worcester County
+            and other regions in the state. For larger or multi-location
+            projects, we can discuss coverage on a case-by-case basis.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 7 -->
+      <details class="faq-item">
+        <summary>
+          <span>How does the quote process work?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            First, we talk briefly about your facility, current challenges and
+            expectations. Then we schedule a walk-through to measure the space,
+            evaluate traffic levels and review any special requirements. Based
+            on that, we send a written proposal with scope, frequency and
+            pricing so you know exactly what is included.
+          </p>
+        </div>
+      </details>
+
+      <!-- FAQ 8 -->
+      <details class="faq-item">
+        <summary>
+          <span>Can you clean outside regular business hours?</span>
+          <span class="faq-icon">+</span>
+        </summary>
+        <div class="faq-body">
+          <p>
+            Yes. Many of our clients prefer cleaning to happen in the evening,
+            overnight or very early in the morning to minimize disruption for
+            staff and visitors. We can also provide day porter services during
+            business hours for restrooms, lobbies and high-traffic areas.
+          </p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+<div class="hero-divider"></div>
+
+
+
+</main>
+ <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    
+    <!-- BRAND -->
+    <div class="footer-column footer-brand">
+      <a href="index.html" class="footer-logo-link" aria-label="Zach’s Quality Services Home">
+        <img
+          src="images/logoz.png"
+          alt="Zach’s Quality Services logo"
+          class="footer-logo"
+          width="190"
+          height="60"
+        />
+      </a>
+      <p class="footer-tagline">
+        Commercial &amp; janitorial cleaning for offices, clinics and facilities across Massachusetts.
+      </p>
+    </div>
+
+    <!-- SERVICES (cada um em um HTML futuro) -->
+    <div class="footer-column footer-services">
+      <h2 class="footer-heading">Services</h2>
+      <ul class="footer-services-list">
+         <li><a href="janitorial.html">Nightly Janitorial</a></li>
+         <li><a href="day.html">Day Porter Services</a></li>
+         <li><a href="clinical.html">Clinical / Medical Cleaning</a></li>
+         <li><a href="floor.html">Floor Care & Buffing</a></li>
+         <li><a href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+         <li><a href="construction.html">Post-Construction Clean-Up</a></li>
+         <li><a href="carpet.html">Carpet & Upholstery Care</a></li>
+        <li><a href="desinfection.html">Disinfection & Sanitization</a></li>
+      </ul>
+    </div>
+
+    <!-- OUTRAS SEÇÕES DO SITE -->
+    <div class="footer-column footer-links">
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-links-list">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="tips.php">Tips &amp; Insights</a></li>
+        <li><a href="#coverage-area">Coverage Area &amp; Insights</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="quote.html">Request a Quote</a></li>
+      </ul>
+    </div>
+
+     <!-- CONTACT + CTA -->
+    <div class="footer-column footer-contact">
+      <h2 class="footer-heading">Contact</h2>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="footer-contact-label">Call</span>
+          <a href="tel:+15087268558">(508) 726-8558</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Email</span>
+          <a href="mailto:zachsqualityservices@gmail.com">zachsqualityservices@gmail.com</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Service Area</span>
+          Massachusetts (statewide)
+        </li>
+      </ul>
+
+      <!-- parágrafo só pra respiro e reforçar disponibilidade -->
+      <p class="footer-contact-note">
+        Prefer phone or text? Our team is ready to respond.
+      </p>
+
+      <!-- CTA: Desktop / Mobile -->
+      <div class="footer-cta-wrapper">
+        <!-- Desktop → contact page -->
+        <a href="contact.html" class="footer-cta footer-cta-desktop">Contact Us</a>
+        <!-- Mobile → SMS -->
+        <a href="sms:+15087268558" class="footer-cta footer-cta-mobile">Text Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL CENTRALIZADAS -->
+  <div class="footer-social">
+    <span class="footer-social-label">Connect with us</span>
+    <div class="footer-social-links">
+
+      <!-- FACEBOOK -->
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Facebook" class="social-icon">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
+
+      <!-- LINKEDIN -->
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn" class="social-icon">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Instagram" class="social-icon">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+
+      <!-- YOUTUBE -->
+      <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="YouTube" class="social-icon">
+        <img src="images/youtube.png" alt="YouTube" />
+      </a>
+
+      <!-- BARK -->
+      <a href="https://bark.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Bark" class="social-icon">
+        <img src="images/bark.png" alt="Bark" />
+      </a>
+
+      <!-- NEXTDOOR -->
+      <a href="https://nextdoor.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Nextdoor" class="social-icon">
+        <img src="images/nextdoor.png" alt="Nextdoor" />
+      </a>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2025 Zach’s Quality Services® — All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

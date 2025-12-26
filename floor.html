@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""
+/>
+  <!-- ========== BASIC HTML META ========== -->
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  />
+
+  <!-- ========== TITLE ========== -->
+  <title>Zach's Quality Services® | Commercial &amp; Janitorial Cleaning Across Massachusetts</title>
+
+  <!-- ========== META DESCRIPTION ========== -->
+  <meta
+    name="description"
+    content="Professional commercial cleaning and janitorial services for offices, clinics, retail, and facilities. Based near Framingham, MA and serving businesses statewide across Massachusetts."
+  />
+
+  <!-- ========== KEYWORDS ========== -->
+  <meta
+    name="keywords"
+    content="commercial cleaning Massachusetts, janitorial services MA, office cleaning Framingham MA, facility cleaning, medical office cleaning, retail cleaning services"
+  />
+
+  <!-- ========== CANONICAL URL ========== -->
+  <link
+    rel="canonical"
+    href="https://www.zachsqualityservices.com/"
+  />
+
+ <!-- FAVICONS CLÁSSICOS -->
+<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
+
+<!-- APPLE TOUCH ICON (iOS – atalho na tela inicial) -->
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+
+<!-- SAFARI / NAVEGADORES MODERNOS (icone recortável) -->
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0B163F">
+
+<!-- MANIFEST (Android / PWA) -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- CORES DO NAVEGADOR / SISTEMA -->
+<meta name="theme-color" content="#0B163F">
+<meta name="msapplication-TileColor" content="#0B163F">
+<meta name="msapplication-config" content="/browserconfig.xml">
+
+
+  <!-- ========== OPEN GRAPH / SOCIAL SHARING ========== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Zach's Quality Services" />
+  <meta
+    property="og:title"
+    content="Zach's Quality Services® | Commercial Cleaning &amp; Janitorial in Massachusetts"
+  />
+  <meta
+    property="og:description"
+    content="Reliable, professional commercial cleaning for offices, clinics, warehouses and retail locations. Serving all of Massachusetts."
+  />
+  <meta
+    property="og:url"
+    content="https://www.zachsqualityservices.com/"
+  />
+  <meta
+    property="og:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+  <meta
+    property="og:image:alt"
+    content="Commercial janitorial crew from Zach's Quality Services® on-site in Massachusetts."
+  />
+
+  <!-- ========== TWITTER CARD (X) ========== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Zach's Quality Services® | Statewide Commercial Cleaning (MA)"
+  />
+  <meta
+    name="twitter:description"
+    content="Janitorial, office cleaning, post-construction cleanup, floor care, day porter service. Massachusetts-wide coverage."
+  />
+  <meta
+    name="twitter:image"
+    content="https://www.zachsqualityservices.com/assets/social-preview.jpg"
+  />
+
+  <!-- ========== LOCAL / SERVICE AREA SIGNALS ========== -->
+  <meta name="geo.region" content="US-MA" />
+  <meta name="geo.placename" content="Framingham" />
+  <meta name="geo.position" content="42.2793;-71.4162" />
+  <meta name="ICBM" content="42.2793, -71.4162" />
+
+  <!-- ========== INDEXING / CRAWLING POLICY ========== -->
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  />
+  <meta
+    name="googlebot"
+    content="index, follow"
+  />
+
+  <!-- ========== BRAND / OWNERSHIP INFO ========== -->
+  <meta
+    name="author"
+    content="Zach's Quality Services®"
+  />
+  <meta
+    name="publisher"
+    content="Zach's Quality Services®"
+  />
+
+  <!-- ========== STRUCTURED DATA: CleaningService ========== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Zach's Quality Services®",
+    "url": "https://www.zachsqualityservices.com/",
+    "image": "https://www.zachsqualityservices.com/assets/logo.png",
+    "logo": "https://www.zachsqualityservices.com/assets/logo.png",
+    "description": "Commercial cleaning and janitorial services for offices, medical facilities, retail, industrial and post-construction sites. Serving all of Massachusetts.",
+    "slogan": "We don't cut corners — we clean them.",
+    "telephone": "(000) 000-0000",
+    "priceRange": "$$",
+    "areaServed": [
+      "Framingham MA",
+      "Greater Boston MA",
+      "Worcester County MA",
+      "All Massachusetts"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Framingham",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      }
+    ],
+    "serviceType": [
+      "Commercial Cleaning",
+      "Janitorial Services",
+      "Office Cleaning",
+      "Medical / Clinical Cleaning",
+      "Retail / Storefront Cleaning",
+      "Post-Construction Cleanup",
+      "Floor Care / Buffing / Waxing",
+      "Day Porter Service"
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/zachsqualityservices",
+      "https://www.facebook.com/zachsqualityservices"
+    ]
+  }
+  </script>
+
+  <!-- ========== PERFORMANCE HINTS / FONT PRELOAD ========== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ========== BASELINE THEME / RESET ========== -->
+  <style>
+    :root {
+      --page-bg: #ffffff;
+      --text-main: #0a1a2f;
+      --accent: #1a4fa3;
+      --border-soft: #dbe2ef;
+      --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--page-bg);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+
+  <!-- ========== SITE STYLES & SCRIPTS ========== -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header-inner">
+      <div class="brand-block">
+        <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+          <img 
+            src="images/logoz.png" 
+            alt="Zach’s Quality Services logo"
+            class="brand-logo"
+            width="220"
+            height="70"
+          />
+        </a>
+      </div>
+
+      <!-- NAVIGATION (desktop) -->
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a class="main-nav-link" href="about.html">About Us</a></li>
+
+          <li class="main-nav-item main-nav-has-sub">
+            <button
+              class="main-nav-link main-nav-toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="services-subnav"
+            >
+              Services
+              <span class="nav-caret" aria-hidden="true">▼</span>
+            </button>
+            <ul class="subnav-list" id="services-subnav" role="menu">
+              <li role="none"><a role="menuitem" class="subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="day.html">Day Porter Services</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+              <li role="none"><a role="menuitem" class="subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+            </ul>
+          </li>
+
+          <li class="main-nav-item"><a class="main-nav-link" href="industries.html">Industries</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="reviews.html">Reviews</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA DESKTOP -->
+      <div class="header-cta-wrapper">
+        <a href="quote.html" class="header-cta-btn" data-cta="free-estimate">
+          Free Estimate
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <button class="mobile-toggle" aria-label="Open menu" aria-controls="mobile-nav" aria-expanded="false">
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+        <span class="mobile-toggle-bar"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE DRAWER -->
+    <aside class="mobile-nav-drawer" id="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <button class="mobile-close" aria-label="Close menu">&times;</button>
+
+        <div class="mobile-brand-block">
+          <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
+            <img
+              src="images/logoa.png"
+              alt="Zach’s Quality Services logo"
+              class="mobile-brand-logo"
+              width="200"
+              height="60"
+            />
+          </a>
+        </div>
+
+        <nav class="mobile-nav-menu" role="navigation" aria-label="Mobile Primary">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="about.html">About Us</a></li>
+
+            <li class="mobile-nav-item mobile-nav-has-sub">
+              <button
+                class="mobile-nav-link mobile-nav-toggle"
+                aria-expanded="false"
+                aria-controls="mobile-services-subnav"
+                type="button"
+              >
+                Services
+                <span class="nav-caret" aria-hidden="true">▼</span>
+              </button>
+
+              <ul class="mobile-subnav-list" id="mobile-services-subnav">
+                <li><a class="mobile-subnav-link" href="janitorial.html">Nightly Janitorial</a></li>
+                <li><a class="mobile-subnav-link" href="day.html">Day Porter Services</a></li>
+                <li><a class="mobile-subnav-link" href="clinical.html">Clinical / Medical Cleaning</a></li>
+                <li><a class="mobile-subnav-link" href="floor.html">Floor Care & Buffing</a></li>
+                <li><a class="mobile-subnav-link" href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+                <li><a class="mobile-subnav-link" href="construction.html">Post-Construction Clean-Up</a></li>
+                <li><a class="mobile-subnav-link" href="carpet.html">Carpet & Upholstery Care</a></li>
+                <li><a class="mobile-subnav-link" href="desinfection.html">Disinfection & Sanitization</a></li>
+              </ul>
+            </li>
+
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="industries.html">Industries</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="reviews.html">Reviews</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <a class="mobile-cta-btn" href="quote.html" data-cta="free-estimate-mobile">
+          Free Estimate
+        </a>
+
+        <div class="mobile-contact-block">
+          <div class="contact-line">
+            <span class="contact-label">Call:</span>
+            <a class="contact-value" href="tel:+15087268558">(508) 726-8558</a>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Headquarters:</span>
+            <span class="contact-value">
+              123 Main St<br>
+              Framingham, MA 01701
+            </span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Coverage:</span>
+            <span class="contact-value">Massachusetts (statewide)</span>
+          </div>
+          <div class="contact-line">
+            <span class="contact-label">Availability:</span>
+            <span class="contact-value">24/7 Emergency Response</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- dark overlay behind drawer -->
+    <div class="mobile-overlay" aria-hidden="true"></div>
+  </header>
+<main>
+<!-- ABOUT THE SERVICE – FLOOR CARE & BUFFING -->
+<section
+  class="service-about-section service-about-floor"
+  id="about-floor"
+>
+  <div class="container service-about-grid">
+    <!-- TEXTO À ESQUERDA -->
+    <div class="service-about-content">
+      <span class="section-tag">Floor Care &amp; Buffing</span>
+
+      <h1 class="service-title">
+        Professional floor care that
+        <span class="service-highlight">restores shine and extends lifespan.</span>
+      </h1>
+
+      <p class="service-subtitle">
+        Floors are one of the first things visitors notice — which is why
+        <span class="brand-highlight">Zach’s Quality Services Inc</span>
+        offers professional floor care and buffing programs tailored to high-traffic commercial environments.
+        From offices and clinics to retail stores and industrial facilities, we clean, polish and protect floors
+        to make them look new for longer.
+      </p>
+
+      <p>
+        Our team uses commercial-grade equipment and the correct chemical process for each flooring type,
+        including VCT tile, laminate, ceramic, vinyl, concrete, wood and specialty materials. Our buffing routines
+        remove micro-scratches and dullness while restoring clarity and shine — without damaging the surface.
+      </p>
+
+      <p>
+        If your floors require deeper restoration, we can also prepare
+        <strong>strip & wax / refinishing programs</strong>
+        using color-coded liners and controlled product application to ensure safety and long-term durability.
+        All work is performed after hours to avoid operational interruptions.
+      </p>
+
+      <p>
+        Whether your goal is maintenance, revitalization or full restoration,
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span>
+        keeps your floors clean, glossy and professional — supporting your building’s image and daily operations.
+      </p>
+    </div>
+
+    <!-- FOTO À DIREITA -->
+<div class="service-about-media">
+  <div class="service-media-card">
+    <video
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="Professional floor buffing on commercial site"
+    >
+      <source src="images/floor-care-1.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+  </div>
+</div>
+  </div>
+</section>
+<div class="section-divider"></div>
+<!-- BENEFITS / WHY CHOOSE US – FLOOR CARE & BUFFING -->
+<section
+  class="service-benefits-section"
+  id="floorcare-benefits"
+>
+  <div class="container service-benefits-grid">
+    
+    <!-- INTRO / TÍTULO -->
+    <div class="service-benefits-intro">
+      <span class="section-tag">Why Choose Us</span>
+
+      <h2 class="service-benefits-title">
+        Why facilities rely on our 
+        <span class="service-highlight">floor care & buffing services.</span>
+      </h2>
+
+      <p class="service-benefits-text">
+        Floors are one of the first things people notice in a building. Our floor
+        care & buffing programs restore shine, durability and appearance using
+        professional-grade equipment and tailored maintenance schedules. Every
+        visit is focused on preserving the lifespan of your floors — and the
+        reputation of your facility.
+      </p>
+    </div>
+
+    <!-- LISTA DE BENEFÍCIOS -->
+    <div class="service-benefits-list-wrapper">
+      <ul class="service-benefits-list">
+
+        <li class="service-benefit-item">
+          <strong>High-gloss buffing & polishing</strong>
+          <span>
+            Machines built for commercial floors create an even shine across
+            high-traffic areas.
+          </span>
+        </li>
+
+        <li class="service-benefit-item">
+          <strong>Improved durability & floor lifespan</strong>
+          <span>
+            Protective finishes help reduce wear, scratches and dullness from
+            heavy foot traffic.
+          </span>
+        </li>
+
+        <li class="service-benefit-item">
+          <strong>Tailored maintenance plans</strong>
+          <span>
+            Scheduled care that adapts to traffic levels, floor type and daily
+            facility activity.
+          </span>
+        </li>
+
+        <li class="service-benefit-item">
+          <strong>Certified equipment operators</strong>
+          <span>
+            Trained crew members use professional buffing / polishing machines
+            made for commercial results.
+          </span>
+        </li>
+
+        <li class="service-benefit-item">
+          <strong>Slip-resistance attention</strong>
+          <span>
+            Our procedures aim to improve safety and reduce slip potential while
+            preserving visual quality.
+          </span>
+        </li>
+
+        <li class="service-benefit-item">
+          <strong>Consistent results across locations</strong>
+          <span>
+            Ideal for property managers with multiple buildings needing equal
+            quality and professional presentation.
+          </span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+ <div class="hero-divider"></div>
+<!-- COMPLIANCE & QUALIFICATIONS – FLOOR CARE & BUFFING -->
+<section
+  class="service-compliance-section"
+  id="floor-care-compliance"
+>
+  <div class="container service-compliance-grid">
+    <!-- TEXTO -->
+    <div class="service-compliance-content">
+      <span class="section-tag section-tag-on-dark">
+        Compliance &amp; Qualifications
+      </span>
+
+      <h2 class="service-compliance-title">
+        Floor care that meets safety,
+        <span class="service-highlight">compliance and appearance</span>
+        standards.
+      </h2>
+
+      <p class="service-compliance-intro">
+        Floor care jobs demand precision, safety and the right equipment for each
+        surface. Our crews at
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span>
+        follow strict protocols for stripping, buffing, scrubbing and refinishing
+        so your flooring looks renewed — without disrupting operations or creating
+        safety hazards.
+      </p>
+
+      <ul class="service-compliance-list">
+        <li>Google Guaranteed provider — screened, insured and backed by Google.</li>
+        <li>Training on correct RPM, pad selection and finish application for each floor type.</li>
+        <li>Safety protocols to prevent slip hazards during and after service.</li>
+        <li>Low-noise equipment for schools, offices and medical facilities.</li>
+        <li>Color-coded mops and pads to reduce cross-contamination risks.</li>
+        <li>Floor evaluations before work begins to determine the correct procedure.</li>
+        <li>Supervisor inspection and post-service walk-through with the client.</li>
+      </ul>
+
+      <p class="service-compliance-note">
+        We maintain compliance with safety guidelines while restoring your
+        flooring’s appearance and traction — leaving your space clean, polished
+        and professional for staff, patients, tenants and visitors.
+      </p>
+    </div>
+
+    <!-- FOTO / CARD -->
+    <div class="service-compliance-media">
+      <div class="service-compliance-card">
+        <img
+          src="images/floor-care-compliance.jpeg"
+          alt="Technician applying floor buffing and refinishing in a commercial facility"
+          loading="lazy"
+        />
+        <div class="service-compliance-badge">
+          Floor care in progress
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="hero-divider"></div>
+<!-- ABOUT THE SERVICE – FLOOR CARE & BUFFING -->
+<section
+  class="service-about-section service-about-floorcare"
+  id="floorcare-about"
+>
+  <div class="container service-about-grid">
+    <!-- TEXTO À ESQUERDA -->
+    <div class="service-about-content">
+      <span class="section-tag">Floor Care &amp; Buffing</span>
+
+      <h1 class="service-title">
+        Professional floor care programs that
+        <span class="service-highlight">restore shine and extend durability.</span>
+      </h1>
+
+      <p class="service-subtitle">
+        <span class="brand-highlight">Zach’s Quality Services Inc</span>
+        delivers expert floor care &amp; buffing programs for offices, clinics,
+        schools, retail stores and industrial facilities across Massachusetts.
+        Our crews clean and restore floor surfaces to maintain a professional,
+        safe and attractive impression for employees and visitors.
+      </p>
+
+      <p>
+        Hard floors require more than daily sweeping and mopping. Over time,
+        surfaces build up scratches, heel marks, scuffs and dull areas that
+        reduce the visual impact of your facility. Our process includes buffing,
+        scrubbing, polishing and restoring finishes to bring back clean,
+        slip-resistant flooring with renewed shine.
+      </p>
+
+      <p>
+        We service VCT, LVT, linoleum, finished concrete, laminate, tile,
+        stone and other commercial surfaces. Each location receives an
+        assessment and a customized floor care schedule aligned with traffic
+        patterns and manufacturer recommendations.
+      </p>
+
+      <p>
+        Whether your floors need routine buffing or periodic restorative deep
+        cleaning,<span class="brand-highlight-inline">Zach’s Quality Services Inc</span> can
+        build floor maintenance plans designed for durability, safety and a
+        polished appearance.
+      </p>
+    </div>
+
+    <!-- FOTO À DIREITA -->
+    <div class="service-about-media">
+      <div class="service-media-card">
+        <img
+          src="images/floorcare-1.jpeg"
+          alt="Professional buffing and floor restoration service"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE OF WORK – FLOOR CARE & BUFFING -->
+<section
+  class="service-scope-section service-scope-floorcare"
+  id="floorcare-scope"
+>
+  <div class="container service-scope-grid">
+    <!-- FOTO À ESQUERDA -->
+    <div class="service-scope-media">
+      <div class="service-scope-media-card">
+        <img
+          src="images/floorcare-scope.jpeg"
+          alt="Floor buffing process with professional machinery"
+          loading="lazy"
+        />
+      </div>
+
+      <!-- ICONS EMBAIXO -->
+      <div class="scope-icons-row">
+        <div class="scope-icon-card">
+          <div class="scope-icon-circle">🌀</div>
+          <span>Buffing</span>
+        </div>
+        <div class="scope-icon-card">
+          <div class="scope-icon-circle">🧽</div>
+          <span>Scrubbing</span>
+        </div>
+        <div class="scope-icon-card">
+          <div class="scope-icon-circle">🧪</div>
+          <span>Safe chemicals</span>
+        </div>
+        <div class="scope-icon-card">
+          <div class="scope-icon-circle">🧷</div>
+          <span>Slip resistance</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTEÚDO À DIREITA -->
+    <div class="service-scope-content">
+      <span class="section-tag">Scope of Work</span>
+
+      <h2 class="service-scope-title">
+        Floor care programs built for
+        <span class="service-scope-highlight">safety, appearance &amp; durability.</span>
+      </h2>
+
+      <p class="service-scope-intro">
+        Floor care &amp; buffing from
+        <span class="brand-highlight-inline">Zach’s Quality Services Inc</span>
+        follows clear procedures to remove buildup, restore shine and extend
+        the lifespan of your floors. Below is a typical scope of work that can
+        be adapted to your building type and material specifications.
+      </p>
+
+      <ul class="scope-list">
+        <li>
+          <strong>Floor inspection:</strong>
+          Assessment of material type, traffic patterns, wear level and coating condition.
+        </li>
+        <li>
+          <strong>Dust removal &amp; sweep:</strong>
+          Removal of debris and dry particulates prior to cleaning process.
+        </li>
+        <li>
+          <strong>Machine buffing:</strong>
+          Use of high-speed or orbital equipment to polish and revive dull surfaces.
+        </li>
+        <li>
+          <strong>Scrubbing &amp; chemical treatment:</strong>
+          Deep cleaning with industry-approved solutions for hard floors.
+        </li>
+        <li>
+          <strong>Detailed edge work:</strong>
+          Hand cleaning and polishing where machines cannot reach.
+        </li>
+        <li>
+          <strong>Spot treatment:</strong>
+          Removal of stains, scuffs and scratches when possible.
+        </li>
+        <li>
+          <strong>Final walk-through:</strong>
+          Inspection to verify uniform finish and safety compliance.
+        </li>
+      </ul>
+
+      <p class="scope-note">
+        Scheduled floor maintenance can include waxing, stripping, sealing,
+        high-speed burnishing and wet recovery methods depending on your
+        flooring type and usage levels.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- BEFORE & AFTER GALLERY – FLOOR CARE & BUFFING -->
+<section class="tl-work janitorial-work" aria-label="Floor care and buffing before and after">
+  <div class="tl-work-head">
+    <h2>Before &amp; After – Floor Care &amp; Buffing</h2>
+    <p>
+      Machine scrubbing, buffing and burnishing for offices, lobbies, hallways and commercial floors.
+      Click any photo to enlarge and see the difference our floor care programs deliver.
+    </p>
+  </div>
+
+  <div class="tl-work-wrapper">
+    <button class="tl-w-btn prev" type="button" aria-label="Previous photo" data-work-prev>‹</button>
+
+    <div class="tl-work-track" data-work-track>
+      <!-- SLIDE 1 -->
+      <figure class="tl-work-slide is-active">
+        <img
+          src="images/floor-work-1.jpg"
+          alt="Office hallway floor before and after machine scrubbing and buffing"
+          loading="lazy">
+      </figure>
+
+      <!-- SLIDE 2 -->
+      <figure class="tl-work-slide">
+        <img
+          src="images/floor-work-2.jpg"
+          alt="Lobby floor restored with professional floor care"
+          loading="lazy">
+      </figure>
+
+      <!-- SLIDE 3 -->
+      <figure class="tl-work-slide">
+        <img
+          src="images/floor-work-3.jpg"
+          alt="VCT floor before and after buffing and polishing"
+          loading="lazy">
+      </figure>
+
+      <!-- SLIDE 4 -->
+      <figure class="tl-work-slide">
+        <img
+          src="images/floor-work-4.jpg"
+          alt="Warehouse or production area floor after deep machine scrubbing"
+          loading="lazy">
+      </figure>
+
+      <!-- add more <figure> if you have more photos -->
+    </div>
+
+    <button class="tl-w-btn next" type="button" aria-label="Next photo" data-work-next>›</button>
+  </div>
+
+  <!-- CTA EMBAIXO – MESMO ESTILO / MESMO CSS -->
+  <div class="tl-work-cta janitorial-work-cta">
+    <a class="btn btn-primary" href="quote.html">
+      Request a Floor Care &amp; Buffing Quote
+    </a>
+  </div>
+</section>
+
+
+
+</main>
+<div class="hero-divider"></div>
+ <footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    
+    <!-- BRAND -->
+    <div class="footer-column footer-brand">
+      <a href="index.html" class="footer-logo-link" aria-label="Zach’s Quality Services Home">
+        <img
+          src="images/logoz.png"
+          alt="Zach’s Quality Services logo"
+          class="footer-logo"
+          width="190"
+          height="60"
+        />
+      </a>
+      <p class="footer-tagline">
+        Commercial &amp; janitorial cleaning for offices, clinics and facilities across Massachusetts.
+      </p>
+    </div>
+
+    <!-- SERVICES (cada um em um HTML futuro) -->
+    <div class="footer-column footer-services">
+      <h2 class="footer-heading">Services</h2>
+      <ul class="footer-services-list">
+         <li><a href="janitorial.html">Nightly Janitorial</a></li>
+         <li><a href="day.html">Day Porter Services</a></li>
+         <li><a href="clinical.html">Clinical / Medical Cleaning</a></li>
+         <li><a href="floor.html">Floor Care & Buffing</a></li>
+         <li><a href="strip.html">Strip & Wax / Floor Refinishing</a></li>
+         <li><a href="construction.html">Post-Construction Clean-Up</a></li>
+         <li><a href="carpet.html">Carpet & Upholstery Care</a></li>
+        <li><a href="desinfection.html">Disinfection & Sanitization</a></li>
+      </ul>
+    </div>
+
+    <!-- OUTRAS SEÇÕES DO SITE -->
+    <div class="footer-column footer-links">
+      <h2 class="footer-heading">Explore</h2>
+      <ul class="footer-links-list">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li><a href="tips.php">Tips &amp; Insights</a></li>
+        <li><a href="index.html#coverage-area">Coverage Area &amp; Insights</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="quote.html">Request a Quote</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT + CTA -->
+    <div class="footer-column footer-contact">
+      <h2 class="footer-heading">Contact</h2>
+      <ul class="footer-contact-list">
+        <li>
+          <span class="footer-contact-label">Call</span>
+          <a href="tel:+15087268558">(508) 726-8558</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Email</span>
+          <a href="mailto:zachsqualityservices@gmail.com">zachsqualityservices@gmail.com</a>
+        </li>
+        <li>
+          <span class="footer-contact-label">Service Area</span>
+          Massachusetts (statewide)
+        </li>
+      </ul>
+
+      <!-- parágrafo só pra respiro e reforçar disponibilidade -->
+      <p class="footer-contact-note">
+        Prefer phone or text? Our team is ready to respond.
+      </p>
+
+      <!-- CTA: Desktop / Mobile -->
+      <div class="footer-cta-wrapper">
+        <!-- Desktop → contact page -->
+        <a href="contact.html" class="footer-cta footer-cta-desktop">Contact Us</a>
+        <!-- Mobile → SMS -->
+        <a href="sms:+15087268558" class="footer-cta footer-cta-mobile">Text Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL CENTRALIZADAS -->
+  <div class="footer-social">
+    <span class="footer-social-label">Connect with us</span>
+    <div class="footer-social-links">
+
+      <!-- FACEBOOK -->
+      <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Facebook" class="social-icon">
+        <img src="images/facebook.png" alt="Facebook" />
+      </a>
+
+      <!-- LINKEDIN -->
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn" class="social-icon">
+        <img src="images/linkedin.png" alt="LinkedIn" />
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Instagram" class="social-icon">
+        <img src="images/instagram.png" alt="Instagram" />
+      </a>
+
+      <!-- YOUTUBE -->
+      <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="YouTube" class="social-icon">
+        <img src="images/youtube.png" alt="YouTube" />
+      </a>
+
+      <!-- BARK -->
+      <a href="https://bark.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Bark" class="social-icon">
+        <img src="images/bark.png" alt="Bark" />
+      </a>
+
+      <!-- NEXTDOOR -->
+      <a href="https://nextdoor.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Nextdoor" class="social-icon">
+        <img src="images/nextdoor.png" alt="Nextdoor" />
+      </a>
+
+    </div>
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>© 2025 Zach’s Quality Services® — All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
