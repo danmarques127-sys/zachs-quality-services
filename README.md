@@ -103,6 +103,6 @@ All rights reserved © 2025.
 
 ## 👤 Author
 
-**DaNgelo Marques**  
+**Dangelo Marques**  
 Web Developer & Digital Consultant  
 GitHub: https://github.com/danmarques127-sys
