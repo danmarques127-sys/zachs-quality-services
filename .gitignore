@@ -14,3 +14,7 @@ Desktop.ini
 node_modules/
 dist/
 .cache/
+
+# --- Runtime uploads (do not commit) ---
+uploads/
+
