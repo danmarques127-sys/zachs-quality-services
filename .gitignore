@@ -1,20 +1,45 @@
-﻿# --- Security / local config ---
+﻿# =========================
+# ENV / SECRETS
+# =========================
+.env
+.env.*
+*.env
+
+# Local configs (credentials, API keys)
 config.local.php
+server/config.local.php
 
-# --- Local test scripts (do not deploy) ---
+# Certificates / keys
+*.key
+*.pem
+*.crt
+
+# =========================
+# Runtime / uploads
+# =========================
+uploads/
+logs/
+*.log
+
+# =========================
+# Temporary / test files
+# =========================
 testedb.php
+test*.php
+debug*.php
 
-# --- OS / editor noise ---
+# =========================
+# OS / editor noise
+# =========================
 .DS_Store
 Thumbs.db
 Desktop.ini
-*.log
+.vscode/
+.idea/
 
-# --- Optional: if you ever add node tooling ---
+# =========================
+# Optional tooling
+# =========================
 node_modules/
 dist/
 .cache/
-
-# --- Runtime uploads (do not commit) ---
-uploads/
-
