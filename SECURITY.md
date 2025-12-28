@@ -14,7 +14,7 @@ its codebase, or its infrastructure, please report it responsibly.
 - Subject: Security Vulnerability Report
 
 If the email above is not available, use:
-- Email: security@danmarques.dev
+- Email: marquesdangelo@hotmail.com
 
 ### What to Include
 Please provide as much detail as possible:
