@@ -1,0 +1,27 @@
+# Changelog
+
+All notable changes to this project are documented in this file.
+
+This project follows a pragmatic versioning approach suitable for
+client-grade static websites.
+
+---
+
+## [1.0.0] — Initial Production Release
+
+### Added
+- SEO-first static website structure
+- Multi-page architecture under `/pages`
+- Centralized assets directory (`/assets`)
+- Apache `.htaccess` with cache and security considerations
+- Architecture documentation under `/docs`
+- Security policy documentation
+
+### Changed
+- Normalized asset paths (absolute references)
+- Cleaned duplicated folders and unused files
+- Standardized routing and internal linking
+
+### Notes
+- This release represents the first production-ready version
+- Deployed to live environment and GitHub Pages preview
