@@ -83,21 +83,19 @@
 Designed for **real-world static hosting** — predictable, portable, and auditable.
 /
 ├── assets/
-│ ├── css/ # Global and page-specific styles
-│ ├── js/ # Vanilla JS interactions
-│ ├── img/ # Images (flattened; no nested /images)
-│ └── icons/ # Icons + favicons (flattened)
-│
-├── seo/
-│ ├── robots.txt
-│ └── sitemap.xml
-│
+│   ├── css/
+│   ├── js/
+│   ├── img/
+│   └── icons/
 ├── docs/
-│ └── ARCHITECTURE.md
-│
+├── pages/
+├── server/
+├── .github/
 ├── .htaccess
 ├── index.html
-└── *.html
+├── robots.txt
+├── sitemap.xml
+└── site.webmanifest
 
 ---
 ## 📐 Architecture & Engineering Notes
