@@ -40,7 +40,7 @@
 
 **Zach’s Quality Services** — an enterprise-grade static website for a **commercial cleaning company**, engineered with an **SEO-first**, **performance-focused**, and **production-hosting-ready** mindset.
 
-> Designed, engineered, and maintained by **DaNgelo Marques**  
+> Designed, engineered, and maintained by **Dangelo Marques**  
 > GitHub: https://github.com/danmarques127-sys
 
 ---
@@ -81,4 +81,69 @@
 ## 🗂️ Project Structure
 
 Designed for **real-world static hosting** — predictable, portable, and auditable.
+/
+├── assets/
+│ ├── css/ # Global and page-specific styles
+│ ├── js/ # Vanilla JS interactions
+│ ├── img/ # Images (flattened; no nested /images)
+│ └── icons/ # Icons + favicons (flattened)
+│
+├── seo/
+│ ├── robots.txt
+│ └── sitemap.xml
+│
+├── docs/
+│ └── ARCHITECTURE.md
+│
+├── .htaccess
+├── index.html
+└── *.html
+
+---
+
+## 🚀 Deployment
+
+### GitHub Pages (Preview)
+
+1. Repository → **Settings → Pages**
+2. Source: **Deploy from a branch**
+3. Branch: `main`
+4. Folder: `/ (root)`
+5. Save and wait for deployment
+
+### Production Deployment (Apache / cPanel)
+
+The website is deployed on an Apache server with support for `.htaccess`
+rules for caching, routing, and security headers.
+
+Production environment considerations:
+- Server must allow `.htaccess` overrides
+- SEO assets (robots.txt, sitemap.xml) are publicly accessible
+- All internal links and assets are validated post-deployment 
+---
+
+## 🗄️ Cache Policy
+
+- Static assets (CSS, JS, images, icons) are cached aggressively to optimize repeat visits.
+- HTML files use shorter cache lifetimes to prevent stale content after updates.
+
+---
+
+## 📄 License
+
+**All Rights Reserved**
+
+This repository represents a real client-grade production website.  
+Reuse, redistribution, or modification is not permitted without explicit authorization.
+
+---
+
+## 👤 Author
+
+**Dangelo Marques**  
+GitHub: https://github.com/danmarques127-sys
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FACC15,60:0A2540,100:FFFFFF&height=120&section=footer" />
+</p>
 
