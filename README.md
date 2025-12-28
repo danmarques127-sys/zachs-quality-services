@@ -100,6 +100,15 @@ Designed for **real-world static hosting** — predictable, portable, and audita
 └── *.html
 
 ---
+## 📐 Architecture & Engineering Notes
+
+Detailed architecture and engineering decisions are documented here:
+
+- `/docs/architecture/overview.md`
+- `/docs/architecture/structure.md`
+- `/docs/architecture/routing-and-links.md`
+- `/docs/architecture/assets-and-media.md`
+- `/docs/architecture/deployment.md`
 
 ## 🚀 Deployment
 
