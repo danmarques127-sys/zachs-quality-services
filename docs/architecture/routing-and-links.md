@@ -1,13 +1,31 @@
-﻿# Routing & Links
+# Routing and Links
 
-## Rule: Use absolute paths
-Use absolute paths from the site root to avoid relative-path problems when moving pages.
+This site uses a flat, file-based routing model.
 
-Examples:
-- `/assets/css/style.css`
-- `/pages/services/janitorial.html`
-- `/pages/gallery/index.html`
+Each page corresponds to a physical `.html` file
+served directly by the web server.
 
-## Homepage shortcut
-Use `/` for the homepage in links.
+---
 
+## Routing Strategy
+
+- No client-side routing
+- No SPA behavior
+- No JavaScript-based navigation
+- Predictable URLs for SEO and crawling
+
+Example:
+- `/index.html` → Home
+- `/services.html`
+- `/contact.html`
+
+---
+
+## Linking Rules
+
+- Internal links use **relative paths**
+- No absolute production URLs inside HTML
+- GitHub Pages and Apache use the same paths
+- Assets are referenced via `/assets/...`
+
+This guarantees portability across environments.
