@@ -1,9 +1,29 @@
-﻿# Assets & Media
+# Assets and Media Policy
 
-## Images & video
-- Store all images/videos in `/assets/images`.
-- Prefer modern formats when possible (WebP for images, MP4/H.264 for video).
+All static assets are centralized under `/assets`.
 
-## Favicons
-All favicon files live in `/assets/favicons` and are referenced with `/assets/favicons/...`.
+---
 
+## Asset Types
+
+- `/assets/css`   → Stylesheets
+- `/assets/js`    → JavaScript
+- `/assets/img`   → Images
+- `/assets/icons` → Icons and favicons
+
+---
+
+## Rules
+
+- No duplicated folders (`img/img`, `icons/icons`)
+- Images are optimized before commit
+- Icons are reused whenever possible
+- Assets are cache-controlled via `.htaccess`
+
+---
+
+## Performance Considerations
+
+- Assets are long-cacheable
+- HTML is shorter-lived
+- No external CDNs unless strictly required
