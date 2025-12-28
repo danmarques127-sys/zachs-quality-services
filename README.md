@@ -1,207 +1,84 @@
+<!--
+  Zach’s Quality Services — README (Top-tier / Senior / Enterprise)
+  Theme: Dark Blue + Light Blue + Yellow
+  Author: DaNgelo Marques (GitHub: danmarques127-sys)
+-->
+
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:0B0B0B,50:2ECC71,100:0B0B0B&height=240&section=header&text=Zach’s%20Quality%20Services&fontSize=44&fontColor=ffffff&animation=fadeIn&fontAlignY=38" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A2540,40:1E3A8A,70:FACC15,100:FFFFFF&height=240&section=header&text=Zach%E2%80%99s%20Quality%20Services&fontSize=50&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Enterprise%20commercial%20cleaning%20website%20%E2%80%A2%20SEO-first%20%E2%80%A2%20Performance-focused%20%E2%80%A2%20Apache-ready&descAlignY=64&descSize=18" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Montserrat&size=22&pause=900&color=2ECC71&center=true&vCenter=true&width=900&lines=Commercial+%26+Janitorial+Cleaning+Website;Production-Ready+Business+Platform;Static+%2B+PHP+Dynamic+Architecture;Built+for+Real+Clients+and+Real+Usage" />
-</p>
-
-<h3 align="center">
-  Official Business Website • SEO-Oriented • Media-Rich • Production-Ready
-</h3>
-
-<p align="center">
-  Built for a real company. Used in production.
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&pause=900&color=FACC15&center=true&vCenter=true&width=980&lines=Enterprise-grade+static+website+for+commercial+cleaning;Built+for+real+clients%2C+real+traffic%2C+real+hosting;SEO-first%2C+fast%2C+secure%2C+Apache%2FcPanel+ready;No+frameworks.+No+build+step.+Clean+engineering." />
 </p>
 
 <p align="center">
-  <a href="https://www.zachsqualityservices.com">
-    <img src="https://img.shields.io/badge/PRODUCTION-WEBSITE-2ECC71?style=for-the-badge">
+  <a href="https://zachsqualityservices.com">
+    <img src="https://img.shields.io/badge/Production-Live-FACC15?style=for-the-badge&logo=vercel&logoColor=0A2540" />
   </a>
   <a href="https://danmarques127-sys.github.io/zachs-quality-services/">
-    <img src="https://img.shields.io/badge/STATIC%20PREVIEW-GitHub%20Pages-black?style=for-the-badge">
+    <img src="https://img.shields.io/badge/GitHub%20Pages-Preview-0A2540?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://github.com/danmarques127-sys">
+    <img src="https://img.shields.io/badge/Author-DaNgelo%20Marques-1E3A8A?style=for-the-badge&logo=github&logoColor=FACC15" />
   </a>
 </p>
 
----
-
-## 🧠 Project Overview
-
-This repository contains the **official production website** for  
-**Zach’s Quality Services**, a **commercial and janitorial cleaning company**
-based in **Massachusetts (USA)**.
-
-The project combines **static, SEO-optimized pages** with **PHP-powered dynamic features**
-to support blog content, media galleries, and database-driven pages.
-
-This is a **real-world client project**, deployed in production and actively used —  
-**not a template, clone, or demo**.
-
----
-
-## 🎯 Project Goals
-
-- Establish strong brand credibility and professional presence
-- Clearly present commercial and janitorial services
-- Support local SEO and search indexing
-- Deliver fast load times with mobile-first responsiveness
-- Showcase real work through image and video galleries
-
----
-
-## 🧩 Platform Strategy
-
-The website was designed with a **hybrid architecture**:
-
-- Static HTML for speed, SEO, and reliability
-- PHP for dynamic content and content management
-- Media-first presentation to highlight real-world work
-- Clean structure to support long-term growth
-
-This balance allows **performance without sacrificing flexibility**.
-
----
-
-## 🖥️ Preview
-
-The website is fully responsive and optimized for:
-
-- 📱 Mobile
-- 💻 Desktop
-- 📟 Tablet
-
-📸 **Screenshots**
-> Homepage, service pages, and gallery views will be added here.
-
----
-
-## 🚀 Key Features
-
-- Mobile-first responsive layout
-- Clean and semantic HTML structure
-- Dynamic blog system (PHP + MySQL)
-- Image and video galleries
-- SEO-oriented architecture
-- Production-ready deployment
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js" />
-</p>
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Responsive design principles
-
-### Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=php,mysql" />
-</p>
-
-- PHP
-- MySQL (blog content and dynamic pages)
-
-### SEO & Web
-- `robots.txt`
-- `sitemap.xml`
-- Web manifest & favicon set
-- SEO-optimized markup
-
----
-
-## 📂 Project Structure
-
-/
-├── index.html
-├── about.html
-├── services-*.html
-├── tips.php
-├── post.php
-├── post-edit.php
-├── style.css
-├── script.js
-├── robots.txt
-├── sitemap.xml
-├── site.webmanifest
-├── images/
-│ ├── gallery/
-│ ├── videos/ # MP4 media
-│ └── brand-assets/
-├── uploads/
-│ └── blog-images/
-├── favicons/
-└── config.example.php
-
-
----
-
-## 🔒 Configuration & Security
-
-- `config.local.php` contains database credentials and is **ignored by Git**
-- `config.example.php` is provided as a safe configuration template
-- Sensitive files are excluded via `.gitignore`
-
-⚠️ **Never commit `config.local.php` to the repository.**
-
----
-
-## 🎥 Media Handling (Images & Videos)
-
-- Images and videos are stored locally under `/images`
-- Gallery supports **JPEG images** and **MP4 videos**
-- Videos are embedded responsively and optimized for web playback
-
-> ⚠️ Large media files increase repository size.  
-> For future scalability, a CDN or external storage is recommended.
-
----
-
-## 🚀 Deployment Options
-
-This project supports deployment via:
-
-- Shared hosting (cPanel)
-- VPS (Apache or Nginx)
-- GitHub Pages (HTML-only preview)
-- Cloud hosting with PHP support
-
----
-
-## 📜 License & Usage
-
-This is a **proprietary project**, developed exclusively for  
-**Zach’s Quality Services**.
-
-- Website content, branding, and media belong to the business
-- Source code is shared for **professional reference only**
-
-❌ Redistribution or reuse without permission is not allowed.
-
----
-
-## 👤 Author
-
-**Deangelo Marques**  
-Web Developer & Digital Consultant  
-
-Responsible for:
-- System architecture
-- Frontend & backend development
-- SEO structure
-- Media handling
-- Deployment strategy
-
-GitHub: https://github.com/danmarques127-sys
-
 <p align="center">
-  <i>Built for credibility. Designed for growth.</i>
+  <img src="https://img.shields.io/badge/Theme-Dark%20Blue%20%26%20Yellow-0A2540?style=for-the-badge&labelColor=FACC15&color=0A2540" />
+  <img src="https://img.shields.io/badge/Focus-Commercial%20Cleaning-1E3A8A?style=for-the-badge&labelColor=FACC15&color=1E3A8A" />
+  <img src="https://img.shields.io/badge/Hosting-Apache%20%2F%20cPanel-0A2540?style=for-the-badge&logo=apache&logoColor=white" />
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:2ECC71,100:0B0B0B&height=120&section=footer" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FACC15,50:0A2540,100:FACC15&height=2&section=header" />
 </p>
+
+---
+
+## 🏢 Title + One-liner
+
+**Zach’s Quality Services** — an enterprise-grade static website for a **commercial cleaning company**, engineered with an **SEO-first**, **performance-focused**, and **production-hosting-ready** mindset.
+
+> Designed, engineered, and maintained by **DaNgelo Marques**  
+> GitHub: https://github.com/danmarques127-sys
+
+---
+
+## 🔗 Live Links
+
+- **Production:** https://zachsqualityservices.com  
+- **GitHub Pages (Preview):** https://danmarques127-sys.github.io/zachs-quality-services/
+
+---
+
+## ✨ Features
+
+- **Multi-page static site** designed for large-scale commercial cleaning services
+- **SEO-first architecture** (semantic HTML, meta/OG, sitemap, robots, clean URLs)
+- **Performance-oriented delivery** with asset caching via `.htaccess`
+- **Accessibility-aware structure** (clear hierarchy, semantic landmarks)
+- **Enterprise-friendly hosting** (Apache, cPanel, SSL-ready)
+- **Zero framework / zero build step** for maximum portability and reliability
+
+---
+
+## 🧰 Tech Stack
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,apache,git,github" />
+  <img src="https://img.shields.io/badge/HTTPS-SSL%20Enabled-22C55E?style=for-the-badge&logo=letsencrypt&logoColor=white" />
+</p>
+
+- **HTML5** — semantic, SEO-friendly markup  
+- **CSS3** — responsive layout, animations, and motion  
+- **Vanilla JavaScript** — lightweight interactivity only  
+- **Apache (.htaccess)** — caching, security, and static hosting rules  
+- **HTTPS / SSL** — production security baseline  
+
+---
+
+## 🗂️ Project Structure
+
+Designed for **real-world static hosting** — predictable, portable, and auditable.
+
