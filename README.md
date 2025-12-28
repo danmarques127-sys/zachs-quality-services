@@ -110,7 +110,7 @@ Detailed architecture and engineering decisions are documented here:
 
 ## 🚀 Deployment
 
-### GitHub Pages (Preview)
+### GitHub Pages 
 
 1. Repository → **Settings → Pages**
 2. Source: **Deploy from a branch**
@@ -118,7 +118,7 @@ Detailed architecture and engineering decisions are documented here:
 4. Folder: `/ (root)`
 5. Save and wait for deployment
 
-### Production Deployment (Apache / cPanel)
+### Production Deployment 
 
 The website is deployed on an Apache server with support for `.htaccess`
 rules for caching, routing, and security headers.
@@ -148,6 +148,7 @@ Reuse, redistribution, or modification is not permitted without explicit authori
 ## 👤 Author
 
 **Dangelo Marques**  
+Software Engineer • Web Architecture • SEO-driven Systems  
 GitHub: https://github.com/danmarques127-sys
 
 <p align="center">
