@@ -1,0 +1,26 @@
+name: HTML & Link Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install html-proofer
+        run: |
+          sudo gem install html-proofer
+
+      - name: Run HTML and link validation
+        run: |
+          htmlproofer ./ \
+            --assume-extension \
+            --check-html \
+            --disable-external \
+            --allow-hash-href
