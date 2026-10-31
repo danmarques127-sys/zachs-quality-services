@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // pasta de uploads
     $dirUploads = __DIR__ . "/uploads/";
     if (!is_dir($dirUploads)) {
-        mkdir($dirUploads, 0775, true);
+        mkdir($dirUploads, 0755, true);
     }
 
     // se veio arquivo
@@ -26,12 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // extensões permitidas
         $extPermitidas = ['pdf','doc','docx','jpg','jpeg','png','webp','avif'];
-        if (!in_array($ext, ['jpg','jpeg','png','webp'], true) || !in_array((new finfo(FILEINFO_MIME_TYPE))->file($_FILES['arquivo']['tmp_name']), ['image/jpeg','image/png','image/webp'], true)) {
+        if ($mensagemErro || !in_array($ext, ['jpg','jpeg','png','webp'], true) || !in_array((new finfo(FILEINFO_MIME_TYPE))->file($_FILES['arquivo']['tmp_name']), ['image/jpeg','image/png','image/webp'], true)) {
             $mensagemErro = "Tipo de arquivo não permitido. Use PDF, DOC, JPG, PNG, WEBP, AVIF.";
         } else {
             $nomeNovo = bin2hex(random_bytes(16)) . "." . $ext;
             $caminhoDestinoFS = $dirUploads . $nomeNovo; // no servidor
-            $caminhoPublico   = "uploads/" . $nomeNovo;  // URL relativa
+            $caminhoPublico   = "/server/uploads/" . $nomeNovo;  // URL relativa
 
             if (move_uploaded_file($_FILES['arquivo']['tmp_name'], $caminhoDestinoFS)) {
                 $caminhoArquivo = $caminhoPublico;
