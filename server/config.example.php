@@ -1,26 +1,10 @@
-﻿<?php
-// =============================================================
-// CONFIG.EXAMPLE.PHP — template seguro (sem credenciais)
-// Copie para config.local.php e preencha USER/PASS no seu ambiente.
-// =============================================================
-
-// Mostrar erros (use apenas em dev)
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-$host   = "localhost";
-$dbname = "tips";
-
-// Preencha no seu config.local.php (NÃO commitar)
-$user = "YOUR_DB_USER";
-$pass = "YOUR_DB_PASSWORD";
-
-$conn = new mysqli($host, $user, $pass, $dbname);
-
-if ($conn->connect_error) {
-    die("Erro ao conectar ao banco: " . $conn->connect_error);
-}
-
-$conn->set_charset("utf8mb4");
-?>
+<?php
+// Documentation example only. The application reads secrets from host environment
+// variables in server/config.php. Never commit production credentials.
+putenv('ZACHS_DB_HOST=localhost');
+putenv('ZACHS_DB_NAME=YOUR_DATABASE_NAME');
+putenv('ZACHS_DB_USER=YOUR_DATABASE_USER');
+// Set ZACHS_DB_PASSWORD securely on your host, never here.
+// Set ZACHS_ADMIN_USERNAME and ZACHS_ADMIN_PASSWORD_HASH securely on your host.
+// See server/README.md for setup and verification.
+// Do not require this example file in production.
