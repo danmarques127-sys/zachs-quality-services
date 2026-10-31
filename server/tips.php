@@ -41,11 +41,11 @@
   />
 
   <!-- FAVICONS -->
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/x-icon" href="/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0B163F">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0B163F">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0B163F">
   <meta name="msapplication-TileColor" content="#0B163F">
@@ -130,8 +130,8 @@
   </style>
 
   <!-- ========== SITE STYLES & SCRIPTS ========== -->
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
   <!-- HEADER IGUAL AOS OUTROS ARQUIVOS -->
@@ -140,7 +140,7 @@
       <div class="brand-block">
         <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
           <img 
-            src="images/logoz.png" 
+            src="/assets/images/logoz.png" 
             alt="Zach’s Quality Services logo"
             class="brand-logo"
             width="220"
@@ -177,7 +177,7 @@
           </li>
 
           <li class="main-nav-item"><a class="main-nav-link" href="industries.html">Industries</a></li>
-          <li class="main-nav-item"><a class="main-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="/tips.php">Tips &amp; Insights</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="reviews.html">Reviews</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact Us</a></li>
@@ -207,7 +207,7 @@
         <div class="mobile-brand-block">
           <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
             <img
-              src="images/logoa.png"
+              src="/assets/images/logoa.png"
               alt="Zach’s Quality Services logo"
               class="mobile-brand-logo"
               width="200"
@@ -244,7 +244,7 @@
             </li>
 
             <li class="mobile-nav-item"><a class="mobile-nav-link" href="industries.html">Industries</a></li>
-            <li class="mobile-nav-item"><a class="mobile-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+            <li class="mobile-nav-item"><a class="mobile-nav-link" href="/tips.php">Tips &amp; Insights</a></li>
             <li class="mobile-nav-item"><a class="mobile-nav-link" href="reviews.html">Reviews</a></li>
             <li class="mobile-nav-item"><a class="mobile-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
             <li class="mobile-nav-item"><a class="mobile-nav-link" href="contact.html">Contact Us</a></li>
@@ -359,7 +359,7 @@
             }
           ?>
             <article class="blog-card">
-              <a class="blog-card-link" href="tip.php?id=<?php echo $id; ?>">
+              <a class="blog-card-link" href="/tip.php?id=<?php echo $id; ?>">
                 <?php if ($isImage): ?>
                   <figure class="blog-card-thumb">
                     <img
@@ -443,7 +443,7 @@
       <div class="footer-column footer-brand">
         <a href="index.html" class="footer-logo-link" aria-label="Zach’s Quality Services Home">
           <img
-            src="images/logoz.png"
+            src="/assets/images/logoz.png"
             alt="Zach’s Quality Services logo"
             class="footer-logo"
             width="190"
@@ -477,7 +477,7 @@
         <ul class="footer-links-list">
           <li><a href="about.html">About Us</a></li>
           <li><a href="industries.html">Industries</a></li>
-          <li><a href="tips.php">Tips &amp; Insights</a></li>
+          <li><a href="/tips.php">Tips &amp; Insights</a></li>
           <li><a href="index.html#coverage-area">Coverage Area &amp; Insights</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -518,22 +518,22 @@
       <span class="footer-social-label">Connect with us</span>
       <div class="footer-social-links">
         <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
-          <img src="images/facebook.png" alt="Facebook" />
+          <img src="/assets/images/facebook.png" alt="Facebook" />
         </a>
         <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-          <img src="images/linkedin.png" alt="LinkedIn" />
+          <img src="/assets/images/linkedin.png" alt="LinkedIn" />
         </a>
         <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram" />
+          <img src="/assets/images/instagram.png" alt="Instagram" />
         </a>
         <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
-          <img src="images/youtube.png" alt="YouTube" />
+          <img src="/assets/images/youtube.png" alt="YouTube" />
         </a>
         <a href="https://bark.com/" target="_blank" rel="noopener noreferrer" aria-label="Bark" class="social-icon">
-          <img src="images/bark.png" alt="Bark" />
+          <img src="/assets/images/bark.png" alt="Bark" />
         </a>
         <a href="https://nextdoor.com/" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor" class="social-icon">
-          <img src="images/nextdoor.png" alt="Nextdoor" />
+          <img src="/assets/images/nextdoor.png" alt="Nextdoor" />
         </a>
       </div>
     </div>
