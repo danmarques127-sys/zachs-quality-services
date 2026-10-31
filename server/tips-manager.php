@@ -1,0 +1,5 @@
+<?php
+require_once __DIR__.'/config.php';admin_only();
+header('Cache-Control: no-store');header('X-Robots-Tag: noindex,nofollow');
+$res=$conn->query('SELECT id,titulo,criado_em FROM posts ORDER BY id DESC LIMIT 200');
+?><!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manage Tips | Zach's Quality Services</title><style>body{font:16px system-ui;max-width:900px;margin:3rem auto;padding:0 1rem;color:#0b163f}a{color:#1854ad}li{padding:12px;border-bottom:1px solid #ddd}header{display:flex;gap:20px;flex-wrap:wrap}</style></head><body><h1>Manage tips and articles</h1><header><a href="/server/post.php">Create article</a><a href="/server/tips.php">Public tips</a><a href="/server/logout.php">Sign out</a></header><ul><?php while($row=$res->fetch_assoc()):?><li><?=html($row['titulo'])?> — <a href="/server/post-edit.php?id=<?=(int)$row['id']?>">Edit</a> · <a href="/server/tip.php?id=<?=(int)$row['id']?>">View</a></li><?php endwhile;?></ul></body></html>
