@@ -1,22 +1,13 @@
 <?php
-session_start();
-
-if (empty($_SESSION['is_admin'])) {
-    header('Location: admin-login.php');
-    exit;
-}
-
-// se o arquivo usa o banco:
-require_once 'config.php';
-?>
-
-<?php
-require_once "config.php";
+require_once __DIR__.'/config.php';
+admin_only();
+header('Cache-Control: no-store');
 
 $mensagemSucesso = null;
 $mensagemErro = null;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    csrf_check();
     $titulo   = isset($_POST['titulo']) ? trim($_POST['titulo']) : '';
     $conteudo = isset($_POST['conteudo']) ? trim($_POST['conteudo']) : '';
     $caminhoArquivo = null;
@@ -30,14 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // se veio arquivo
     if (!empty($_FILES['arquivo']['name']) && $_FILES['arquivo']['error'] === UPLOAD_ERR_OK) {
         $nomeOriginal = basename($_FILES['arquivo']['name']);
+        if ($_FILES['arquivo']['size'] > 8*1024*1024) { $mensagemErro='Maximum upload size is 8 MB.'; }
         $ext = strtolower(pathinfo($nomeOriginal, PATHINFO_EXTENSION));
 
         // extensões permitidas
         $extPermitidas = ['pdf','doc','docx','jpg','jpeg','png','webp','avif'];
-        if (!in_array($ext, $extPermitidas)) {
+        if (!in_array($ext, ['jpg','jpeg','png','webp'], true) || !in_array((new finfo(FILEINFO_MIME_TYPE))->file($_FILES['arquivo']['tmp_name']), ['image/jpeg','image/png','image/webp'], true)) {
             $mensagemErro = "Tipo de arquivo não permitido. Use PDF, DOC, JPG, PNG, WEBP, AVIF.";
         } else {
-            $nomeNovo = uniqid("post_") . "." . $ext;
+            $nomeNovo = bin2hex(random_bytes(16)) . "." . $ext;
             $caminhoDestinoFS = $dirUploads . $nomeNovo; // no servidor
             $caminhoPublico   = "uploads/" . $nomeNovo;  // URL relativa
 
@@ -72,8 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8" />
   <title>Client Hub – Create Blog Post</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
   <!-- Se quiser, mais tarde você copia aqui o mesmo header do index.html -->
@@ -95,6 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form action="post.php" method="post" enctype="multipart/form-data" style="display:grid;gap:1rem;">
+      <input type="hidden" name="csrf_token" value="<?php echo html(csrf_token()); ?>">
       <div>
         <label for="titulo"><strong>Título *</strong></label><br>
         <input type="text" id="titulo" name="titulo" required style="width:100%;padding:0.5rem;">
@@ -109,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <label for="arquivo"><strong>Arquivo (opcional)</strong></label><br>
         <input type="file" id="arquivo" name="arquivo">
         <p style="font-size:0.85rem;color:#64748b;margin-top:0.25rem;">
-          Aceita: PDF, DOC, JPG, PNG, WEBP, AVIF.
+          Images only: JPG, PNG, WEBP (max 8 MB).
         </p>
       </div>
 
