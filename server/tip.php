@@ -1,4 +1,4 @@
-<?php require_once 'config.php'; ?>
+<?php require_once __DIR__.'/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,23 +84,7 @@
   </header>
 
   <?php
-    // pega o id da URL
-    $id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
-
-    if ($id <= 0) {
-      $post = null;
-    } else {
-      $stmt = $conn->prepare("SELECT id, titulo, conteudo, arquivo, criado_em FROM posts WHERE id = ?");
-      $stmt->bind_param("i", $id);
-      $stmt->execute();
-      $result = $stmt->get_result();
-      $post = $result->fetch_assoc();
-      $stmt->close();
-    }
-  ?>
-
- <?php
-// buscar o post pelo id na URL ?id=3 por exemplo
+// Look up the requested public article using a prepared statement
 $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 
 $titulo = $conteudo = $arquivo = $criado_em = '';
@@ -119,6 +103,7 @@ if ($id > 0) {
   $stmt->close();
 }
 
+if ($titulo === '') { http_response_code(404); $titulo='Article not found'; $conteudo='This article is unavailable.'; }
 $data = $criado_em ? date('F j, Y', strtotime($criado_em)) : '';
 $isImage = !empty($arquivo) && preg_match('/\.(jpe?g|png|gif|webp)$/i', $arquivo);
 ?>
