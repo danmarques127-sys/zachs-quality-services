@@ -17,8 +17,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
   <!-- mesmo HEADER -->
@@ -28,7 +28,7 @@
       <div class="brand-block">
         <a href="/" class="brand-link" aria-label="Zach’s Quality Services Home">
           <img 
-            src="images/logoz.png" 
+            src="/assets/images/logoz.png" 
             alt="Zach’s Quality Services logo"
             class="brand-logo"
             width="220"
@@ -62,7 +62,7 @@
             </ul>
           </li>
           <li class="main-nav-item"><a class="main-nav-link" href="industries.html">Industries</a></li>
-          <li class="main-nav-item"><a class="main-nav-link" href="tips.php">Tips &amp; Insights</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="/tips.php">Tips &amp; Insights</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="reviews.html">Reviews</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="index.html#coverage-area">Coverage Area</a></li>
           <li class="main-nav-item"><a class="main-nav-link" href="contact.html">Contact Us</a></li>
@@ -127,7 +127,7 @@ $isImage = !empty($arquivo) && preg_match('/\.(jpe?g|png|gif|webp)$/i', $arquivo
   <section class="tip-section">
     <div class="container tip-container">
 
-      <a href="tips.php" class="tip-back-link">← Back to Tips &amp; Insights</a>
+      <a href="/tips.php" class="tip-back-link">← Back to Tips &amp; Insights</a>
 
       <?php if ($isImage): ?>
         <figure class="tip-hero-image">
@@ -190,7 +190,7 @@ $isImage = !empty($arquivo) && preg_match('/\.(jpe?g|png|gif|webp)$/i', $arquivo
       <div class="footer-column footer-brand">
         <a href="index.html" class="footer-logo-link" aria-label="Zach’s Quality Services Home">
           <img
-            src="images/logoz.png"
+            src="/assets/images/logoz.png"
             alt="Zach’s Quality Services logo"
             class="footer-logo"
             width="190"
@@ -224,7 +224,7 @@ $isImage = !empty($arquivo) && preg_match('/\.(jpe?g|png|gif|webp)$/i', $arquivo
         <ul class="footer-links-list">
           <li><a href="about.html">About Us</a></li>
           <li><a href="industries.html">Industries</a></li>
-          <li><a href="tips.php">Tips &amp; Insights</a></li>
+          <li><a href="/tips.php">Tips &amp; Insights</a></li>
           <li><a href="index.html#coverage-area">Coverage Area &amp; Insights</a></li>
           <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -265,22 +265,22 @@ $isImage = !empty($arquivo) && preg_match('/\.(jpe?g|png|gif|webp)$/i', $arquivo
       <span class="footer-social-label">Connect with us</span>
       <div class="footer-social-links">
         <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
-          <img src="images/facebook.png" alt="Facebook" />
+          <img src="/assets/images/facebook.png" alt="Facebook" />
         </a>
         <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
-          <img src="images/linkedin.png" alt="LinkedIn" />
+          <img src="/assets/images/linkedin.png" alt="LinkedIn" />
         </a>
         <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
-          <img src="images/instagram.png" alt="Instagram" />
+          <img src="/assets/images/instagram.png" alt="Instagram" />
         </a>
         <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-icon">
-          <img src="images/youtube.png" alt="YouTube" />
+          <img src="/assets/images/youtube.png" alt="YouTube" />
         </a>
         <a href="https://bark.com/" target="_blank" rel="noopener noreferrer" aria-label="Bark" class="social-icon">
-          <img src="images/bark.png" alt="Bark" />
+          <img src="/assets/images/bark.png" alt="Bark" />
         </a>
         <a href="https://nextdoor.com/" target="_blank" rel="noopener noreferrer" aria-label="Nextdoor" class="social-icon">
-          <img src="images/nextdoor.png" alt="Nextdoor" />
+          <img src="/assets/images/nextdoor.png" alt="Nextdoor" />
         </a>
       </div>
     </div>
