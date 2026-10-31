@@ -1,5 +1,7 @@
 <?php
-require_once 'config.php';
+require_once __DIR__.'/config.php';
+admin_only();
+header('Cache-Control: no-store');
 
 $erro  = '';
 $sucesso = '';
@@ -12,6 +14,7 @@ $post   = [
 
 // 1) SE ENVIAR O FORMULÁRIO, ATUALIZA NO BANCO
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  csrf_check();
   $id       = isset($_POST['id']) ? (int)$_POST['id'] : 0;
   $titulo   = trim($_POST['titulo'] ?? '');
   $conteudo = trim($_POST['conteudo'] ?? '');
@@ -380,6 +383,7 @@ else {
 
     <?php if (!empty($post['id'])): ?>
       <form method="post" action="post-edit.php">
+        <input type="hidden" name="csrf_token" value="<?php echo html(csrf_token()); ?>">
         <input type="hidden" name="id" value="<?php echo (int)$post['id']; ?>">
 
         <div class="form-grid">
