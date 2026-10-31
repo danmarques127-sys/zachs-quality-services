@@ -1,81 +1,86 @@
-# Zach's Quality Services — Website
+<div align="center">
 
-Source code for the official website of **Zach's Quality Services**, a commercial cleaning and janitorial services company serving businesses in Massachusetts.
+# Zach's Quality Services
 
-**Production website:** https://zachsqualityservices.com/  
-**Repository:** https://github.com/danmarques127-sys/zachs-quality-services  
-**Default branch:** `main`
+**Official website · Commercial Cleaning · Massachusetts**
+
+Commercial and janitorial cleaning services for businesses across Massachusetts.
+
+[**Visit Website**](https://zachsqualityservices.com/) · [**GitHub Repository**](https://github.com/danmarques127-sys/zachs-quality-services)
+
+</div>
+
+<p align="center">
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white">
+  <img alt="Responsive design" src="https://img.shields.io/badge/Responsive-Design-087E8B?style=flat-square">
+  <img alt="SEO" src="https://img.shields.io/badge/SEO-Optimized-238636?style=flat-square">
+  <img alt="Apache and cPanel" src="https://img.shields.io/badge/Apache%20%2F%20cPanel-Hosting-D22128?style=flat-square&logo=apache&logoColor=white">
+</p>
+
+<p align="center">
+  <img alt="MySQL" src="https://img.shields.io/badge/Database-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white">
+</p>
+
+---
 
 ## Overview
 
-The website presents commercial cleaning services, company information, customer reviews, project photography and videos, and contact / quote-request options. The public-facing site is primarily built with static HTML, CSS and vanilla JavaScript.
+The website includes commercial cleaning services, service-area and industry information, reviews, photo and video galleries, quote requests and a PHP/MySQL-based Tips & Insights publishing system.
 
-## Website sections
+## Technology Stack
 
-- `index.html` — homepage and service overview.
-- `pages/about.html` — company information.
-- `pages/industries.html` — industries served.
-- `pages/services/` — individual cleaning-service pages, including janitorial, day porter, clinical cleaning, floor care, carpet cleaning, post-construction cleaning, disinfection and refinishing.
-- `pages/gallery/` — project photography and videos across multiple gallery pages.
-- `pages/reviews.html` — customer reviews.
-- `pages/contact.html` and `pages/quote.html` — contact and quote-request pages.
-- `assets/css/style.css` — shared styling.
-- `assets/js/script.js` — browser-side interactions.
-- `assets/images/` and `assets/favicons/` — project media and brand assets.
-- `server/` — PHP pages and configuration example for an additional content-management feature; these are **not** executable on static-only hosting.
-- `docs/architecture/` — supplementary architecture and deployment notes.
+| Layer | Technologies |
+| --- | --- |
+| Frontend | HTML5, CSS3, vanilla JavaScript |
+| Content | PHP-powered articles and content management |
+| Hosting | Apache / cPanel-compatible PHP hosting |
+| SEO | Semantic metadata, sitemap, responsive pages |
+| Source control | Git and GitHub |
+
+## Project Structure
+
+- `index.html` — homepage and featured services.
+- `pages/about.html`, `pages/industries.html` — company and industries served.
+- `pages/services/` — janitorial, day porter, medical, disinfection, floor and carpet services.
+- `pages/gallery/`, `pages/reviews.html` — project media and customer reviews.
+- `pages/contact.html`, `pages/quote.html` — contact and quote pages.
+- `tips.php`, `tip.php` — public tips index and article routes.
+- `server/` — PHP article administration, MySQL configuration, schema and setup notes.
+- `assets/css/`, `assets/js/`, `assets/images/` — frontend assets and media.
+- `.github/workflows/html-check.yml` — HTML validation workflow.
 - `robots.txt`, `sitemap.xml`, `site.webmanifest` — SEO and browser metadata.
-- `.github/workflows/html-check.yml` — repository validation workflow.
 
-## Technology
+## Tips & Insights / Blog
 
-- HTML5, CSS3 and vanilla JavaScript for the primary website.
-- PHP and MySQL dependencies in the optional `server/` area.
-- Apache/cPanel-compatible production deployment, subject to server configuration.
-- GitHub Pages may serve as a **static preview**, but it does not execute PHP.
-
-There is no frontend build process required for the static pages.
+The Tips & Insights system uses PHP and MySQL. Public routes are `/tips.php` and `/tip.php?id=1`; administrator login and article management live under `/server/`. Hosting credentials are read from environment variables, never from the committed repository. See [server/README.md](server/README.md) for the required configuration and [server/schema.sql](server/schema.sql) for the proposed database schema. Production operation remains dependent on a configured database and live validation.
 
 ## Deployment
 
-### Static preview
+Static pages can be previewed on a static host; the PHP blog needs a PHP/MySQL-capable host (such as appropriately configured Apache/cPanel). Preserve the repository paths, configure database and admin environment variables, enforce HTTPS, protect uploads, and test all public and admin routes. GitHub Pages cannot run PHP.
 
-Deploy the repository's `main` branch from its root using a static host such as GitHub Pages. Verify relative asset paths and nested-page navigation under the preview subpath. PHP endpoints and database-backed features must be tested separately on a PHP-capable host.
+### Release Checklist
 
-### Production — Apache / cPanel
+1. Back up the existing production site and persistent data.
+2. Verify assets, internal links, navigation and mobile layout.
+3. Test contact and quote forms with non-sensitive submissions.
+4. Verify HTTPS, canonical URLs, metadata, robots.txt and sitemap.xml.
+5. Test public articles and authenticated publishing on PHP-enabled hosting.
+6. Check error logs, access controls and backup restoration procedures.
 
-1. Back up the existing website and configuration before deploying.
-2. Copy the site files to the intended web root, preserving their directory structure.
-3. Verify the server's PHP and MySQL requirements before enabling any `server/` endpoints. Keep live database credentials outside version control.
-4. Configure HTTPS, redirects and server access rules at the hosting layer.
-5. Check the homepage and each service, gallery, review, contact and quote page.
-6. Verify that CSS, JavaScript, images and videos resolve correctly from nested routes.
-7. Test the real form destination(s), error handling and delivery using non-sensitive test data.
-8. Validate `/robots.txt`, `/sitemap.xml`, canonical URLs and social-sharing metadata against the production domain.
-9. Check navigation and page layouts on mobile and desktop; monitor browser-console and server errors after deployment.
+## Security
 
-**Note:** the PHP files under `server/` reference `config.php`, while the repository supplies `server/config.example.php` only. The example is a template, not a ready-to-run production configuration. Do not assume the optional admin/content feature is operational without completing and testing its authentication, configuration and upload protections.
+Restrict article creation and editing to authenticated administrators, validate CSRF tokens and limit media uploads. Configure `ZACHS_DB_*` and `ZACHS_ADMIN_*` values securely on the hosting environment, not in Git. Verify the protected upload directory and live login/logout flow before treating the publishing system as production-ready.
 
-## Security and configuration
+**Never commit passwords, secrets, private keys, live configuration files, database dumps or administrator credentials.**
 
-Never commit passwords, API tokens, database credentials, private keys, live `.env` files or database dumps. Store secrets on the host using appropriate access restrictions. The `.gitignore` excludes common local configuration files but **does not** remove secrets already committed in Git history.
+## SEO & Maintenance
 
-Before deploying or enabling PHP endpoints:
+Validate links, galleries, image and video loading, contact and quote forms, canonical tags, sitemap and mobile layout. See [docs/architecture](docs/architecture/) and [docs/SECURITY](docs/SECURITY).
 
-- Verify authentication and authorization, including direct access to administrative URLs.
-- Review file-upload validation, MIME checks, file size limits and executable-file restrictions.
-- Disable detailed error display in production.
-- Use least-privilege database credentials and keep backups of persistent data.
-- Rotate any credential suspected of exposure.
+## Maintainer & Ownership
 
-See `docs/SECURITY` for the project's vulnerability-reporting guidance.
-
-## SEO and maintenance
-
-Keep the canonical production domain consistent across page metadata, structured data, sitemap entries and social previews. Update services and gallery content with permission from the business. Optimize large media files where practical and check accessibility, page loading and broken links before each release.
-
-The codebase's architecture notes are in [docs/architecture](docs/architecture/). Existing documentation may describe intended configurations; verify these against the live hosting environment.
-
-## Ownership and license
-
-The project is maintained under [danmarques127-sys](https://github.com/danmarques127-sys). See [LICENSE](LICENSE) for the applicable terms. Public repository visibility does not grant permission to reuse protected branding, media or other content beyond those terms.
+Maintained at [danmarques127-sys](https://github.com/danmarques127-sys). See [LICENSE](LICENSE) for repository terms. Business branding, media and content must not be reused without the applicable permissions.
